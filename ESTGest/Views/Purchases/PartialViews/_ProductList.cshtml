@@ -1,0 +1,26 @@
+﻿@model List<ESTGest.Models.Product>
+
+<table>
+    <thead>
+        <tr>
+            <th style="width: 200px; margin-bottom: 50px;">Nome</th>
+            <th style="width: 50px;">Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (ESTGest.Models.Product data in Model)
+            {
+
+            <tr>
+                <th>
+                    @data.pr_designation
+                </th>
+                <th class="qty">
+                    @data.pr_price €
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+

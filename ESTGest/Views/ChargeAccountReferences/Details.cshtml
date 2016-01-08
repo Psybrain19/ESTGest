@@ -1,0 +1,50 @@
+﻿@model ESTGest.Models.ChargeAccountReference
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Referencia de Carregamento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.car_reference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_reference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_valtime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_valtime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.car_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.car_amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.car_id }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

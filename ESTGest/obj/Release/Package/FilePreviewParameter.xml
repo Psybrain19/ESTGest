@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="estgest-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Bruno\\Documents\\Visual\ Studio\ 2015\\Projects\\ESTGest\\ESTGest\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Bruno\\Documents\\Visual\ Studio\ 2015\\Projects\\ESTGest\\ESTGest\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ESTGestDbEntities2-Web.config Connection String" description="" value="metadata=res://*/Models.ESTGestModel.csdl|res://*/Models.ESTGestModel.ssdl|res://*/Models.ESTGestModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=BRUNO;initial catalog=ESTGestDB;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Bruno\\Documents\\Visual\ Studio\ 2015\\Projects\\ESTGest\\ESTGest\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ESTGestDbEntities2']/@connectionString" />
+  </parameter>
+</parameters>

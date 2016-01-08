@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ESTGest.Models.BankAccount>
+
+@{
+    ViewBag.Title = "BankAccountList";
+}
+
+<h2>Lista de Contas Bancárias</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "BankAccountCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ba_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bar_cash)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ba_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bar_cash)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "BankAccountEdit", new { id=item.ba_id }) |
+            @Html.ActionLink("Detalhes", "BankAccountDetails", new { id=item.ba_id }) |
+            @Html.ActionLink("Apagar", "BankAccountDelete", new { id=item.ba_id })
+        </td>
+    </tr>
+}
+
+</table>

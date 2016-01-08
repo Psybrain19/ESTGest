@@ -1,0 +1,57 @@
+﻿@model ESTGest.Models.Purchase
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Comprar</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model => model.p_designation, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.p_designation)
+                @Html.ValidationMessageFor(model => model.p_designation)
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.p_total, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.Editor("0", new
+           { disabled = "disabled", @readonly = "readonly", id = "total-buy" })
+                @Html.ValidationMessageFor(model => model.p_total)
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            @Html.Label("Produtos", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-6">
+                        @Html.Action("ProductDropDownList", "Purchases")
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>             
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Comprar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @if (User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Voltar", "IndexAdmin")
+    }
+    else
+    {
+        @Html.ActionLink("Voltar", "Index")
+    }
+</div>

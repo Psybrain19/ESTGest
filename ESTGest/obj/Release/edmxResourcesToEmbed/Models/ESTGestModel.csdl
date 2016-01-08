@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ESTGestDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ESTGestDbEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Arduinoes" EntityType="ESTGestDbModel.Arduino" />
+    <EntitySet Name="BankAccounts" EntityType="ESTGestDbModel.BankAccount" />
+    <EntitySet Name="ChargeAccountReferences" EntityType="ESTGestDbModel.ChargeAccountReference" />
+    <EntitySet Name="Courses" EntityType="ESTGestDbModel.Course" />
+    <EntitySet Name="CourseCategories" EntityType="ESTGestDbModel.CourseCategory" />
+    <EntitySet Name="CourseClasses" EntityType="ESTGestDbModel.CourseClass" />
+    <EntitySet Name="Disciplines" EntityType="ESTGestDbModel.Discipline" />
+    <EntitySet Name="Presences" EntityType="ESTGestDbModel.Presence" />
+    <EntitySet Name="Products" EntityType="ESTGestDbModel.Product" />
+    <EntitySet Name="Purchases" EntityType="ESTGestDbModel.Purchase" />
+    <EntitySet Name="PurchaseProductLists" EntityType="ESTGestDbModel.PurchaseProductList" />
+    <EntitySet Name="Roles" EntityType="ESTGestDbModel.Role" />
+    <EntitySet Name="Rooms" EntityType="ESTGestDbModel.Room" />
+    <EntitySet Name="RoomTypes" EntityType="ESTGestDbModel.RoomType" />
+    <EntitySet Name="Schedules" EntityType="ESTGestDbModel.Schedule" />
+    <EntitySet Name="ScheduleContents" EntityType="ESTGestDbModel.ScheduleContent" />
+    <EntitySet Name="Users" EntityType="ESTGestDbModel.User" />
+    <EntitySet Name="UserDisciplineLists" EntityType="ESTGestDbModel.UserDisciplineList" />
+    <EntitySet Name="UserPresenceLists" EntityType="ESTGestDbModel.UserPresenceList" />
+    <EntitySet Name="UserPurchaseLists" EntityType="ESTGestDbModel.UserPurchaseList" />
+    <EntitySet Name="UserRoles" EntityType="ESTGestDbModel.UserRole" />
+    <AssociationSet Name="FK_Arduino_Room" Association="ESTGestDbModel.FK_Arduino_Room">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Arduino" EntitySet="Arduinoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_BankAccount" Association="ESTGestDbModel.FK_User_BankAccount">
+      <End Role="BankAccount" EntitySet="BankAccounts" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_ChargeAccountReference" Association="ESTGestDbModel.FK_User_ChargeAccountReference">
+      <End Role="ChargeAccountReference" EntitySet="ChargeAccountReferences" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Course_CourseCategory" Association="ESTGestDbModel.FK_Course_CourseCategory">
+      <End Role="CourseCategory" EntitySet="CourseCategories" />
+      <End Role="Course" EntitySet="Courses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseClass_Course" Association="ESTGestDbModel.FK_CourseClass_Course">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="CourseClass" EntitySet="CourseClasses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_Course" Association="ESTGestDbModel.FK_Discipline_Course">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="Discipline" EntitySet="Disciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Course" Association="ESTGestDbModel.FK_User_Course">
+      <End Role="Course" EntitySet="Courses" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CourseClass_Schedule" Association="ESTGestDbModel.FK_CourseClass_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="CourseClass" EntitySet="CourseClasses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_CourseClass" Association="ESTGestDbModel.FK_User_CourseClass">
+      <End Role="CourseClass" EntitySet="CourseClasses" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_ScheduleContent" Association="ESTGestDbModel.FK_Discipline_ScheduleContent">
+      <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+      <End Role="Discipline" EntitySet="Disciplines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presence_Discipline" Association="ESTGestDbModel.FK_Presence_Discipline">
+      <End Role="Discipline" EntitySet="Disciplines" />
+      <End Role="Presence" EntitySet="Presences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDisciplineList_Discipline" Association="ESTGestDbModel.FK_UserDisciplineList_Discipline">
+      <End Role="Discipline" EntitySet="Disciplines" />
+      <End Role="UserDisciplineList" EntitySet="UserDisciplineLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Presence_Room" Association="ESTGestDbModel.FK_Presence_Room">
+      <End Role="Room" EntitySet="Rooms" />
+      <End Role="Presence" EntitySet="Presences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPresenceList_Presence" Association="ESTGestDbModel.FK_UserPresenceList_Presence">
+      <End Role="Presence" EntitySet="Presences" />
+      <End Role="UserPresenceList" EntitySet="UserPresenceLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseProductList_Product" Association="ESTGestDbModel.FK_PurchaseProductList_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="PurchaseProductList" EntitySet="PurchaseProductLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseProductList_Purchase" Association="ESTGestDbModel.FK_PurchaseProductList_Purchase">
+      <End Role="Purchase" EntitySet="Purchases" />
+      <End Role="PurchaseProductList" EntitySet="PurchaseProductLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPurchaseList_Purchase" Association="ESTGestDbModel.FK_UserPurchaseList_Purchase">
+      <End Role="Purchase" EntitySet="Purchases" />
+      <End Role="UserPurchaseList" EntitySet="UserPurchaseLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_Roles" Association="ESTGestDbModel.FK_UserRoles_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Room_RoomType" Association="ESTGestDbModel.FK_Room_RoomType">
+      <End Role="RoomType" EntitySet="RoomTypes" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Room_ScheduleContent" Association="ESTGestDbModel.FK_Room_ScheduleContent">
+      <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduleContent_Schedule" Association="ESTGestDbModel.FK_ScheduleContent_Schedule">
+      <End Role="Schedule" EntitySet="Schedules" />
+      <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDisciplineList_User" Association="ESTGestDbModel.FK_UserDisciplineList_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDisciplineList" EntitySet="UserDisciplineLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPresenceList_User" Association="ESTGestDbModel.FK_UserPresenceList_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserPresenceList" EntitySet="UserPresenceLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPurchaseList_User" Association="ESTGestDbModel.FK_UserPurchaseList_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserPurchaseList" EntitySet="UserPurchaseLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_User" Association="ESTGestDbModel.FK_UserRoles_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserRole" EntitySet="UserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Arduino">
+    <Key>
+      <PropertyRef Name="a_id" />
+    </Key>
+    <Property Name="a_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="a_value" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="a_room_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Room" Relationship="ESTGestDbModel.FK_Arduino_Room" FromRole="Arduino" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="BankAccount">
+    <Key>
+      <PropertyRef Name="ba_id" />
+    </Key>
+    <Property Name="ba_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ba_number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bar_cash" Type="Double" />
+    <NavigationProperty Name="Users" Relationship="ESTGestDbModel.FK_User_BankAccount" FromRole="BankAccount" ToRole="User" />
+  </EntityType>
+  <EntityType Name="ChargeAccountReference">
+    <Key>
+      <PropertyRef Name="car_id" />
+    </Key>
+    <Property Name="car_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="car_reference" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_state" Type="Int32" Nullable="false" />
+    <Property Name="car_valtime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="car_amount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="ESTGestDbModel.FK_User_ChargeAccountReference" FromRole="ChargeAccountReference" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="c_id" />
+    </Key>
+    <Property Name="c_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="c_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="c_coursecat_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CourseCategory" Relationship="ESTGestDbModel.FK_Course_CourseCategory" FromRole="Course" ToRole="CourseCategory" />
+    <NavigationProperty Name="CourseClasses" Relationship="ESTGestDbModel.FK_CourseClass_Course" FromRole="Course" ToRole="CourseClass" />
+    <NavigationProperty Name="Disciplines" Relationship="ESTGestDbModel.FK_Discipline_Course" FromRole="Course" ToRole="Discipline" />
+    <NavigationProperty Name="Users" Relationship="ESTGestDbModel.FK_User_Course" FromRole="Course" ToRole="User" />
+  </EntityType>
+  <EntityType Name="CourseCategory">
+    <Key>
+      <PropertyRef Name="cc_id" />
+    </Key>
+    <Property Name="cc_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cc_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Courses" Relationship="ESTGestDbModel.FK_Course_CourseCategory" FromRole="CourseCategory" ToRole="Course" />
+  </EntityType>
+  <EntityType Name="CourseClass">
+    <Key>
+      <PropertyRef Name="cc_id" />
+    </Key>
+    <Property Name="cc_id" Type="Int32" Nullable="false" />
+    <Property Name="cc_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cc_course_id" Type="Int32" Nullable="false" />
+    <Property Name="cc_schedule_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Course" Relationship="ESTGestDbModel.FK_CourseClass_Course" FromRole="CourseClass" ToRole="Course" />
+    <NavigationProperty Name="Schedule" Relationship="ESTGestDbModel.FK_CourseClass_Schedule" FromRole="CourseClass" ToRole="Schedule" />
+    <NavigationProperty Name="Users" Relationship="ESTGestDbModel.FK_User_CourseClass" FromRole="CourseClass" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Discipline">
+    <Key>
+      <PropertyRef Name="d_id" />
+    </Key>
+    <Property Name="d_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="d_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="d_value" Type="Int32" />
+    <Property Name="d_yearcourse" Type="Int32" />
+    <Property Name="d_credits" Type="Int32" />
+    <Property Name="d_user_id" Type="Int32" Nullable="false" />
+    <Property Name="d_course_id" Type="Int32" Nullable="false" />
+    <Property Name="d_scontent_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Course" Relationship="ESTGestDbModel.FK_Discipline_Course" FromRole="Discipline" ToRole="Course" />
+    <NavigationProperty Name="ScheduleContent" Relationship="ESTGestDbModel.FK_Discipline_ScheduleContent" FromRole="Discipline" ToRole="ScheduleContent" />
+    <NavigationProperty Name="Presences" Relationship="ESTGestDbModel.FK_Presence_Discipline" FromRole="Discipline" ToRole="Presence" />
+    <NavigationProperty Name="UserDisciplineLists" Relationship="ESTGestDbModel.FK_UserDisciplineList_Discipline" FromRole="Discipline" ToRole="UserDisciplineList" />
+  </EntityType>
+  <EntityType Name="Presence">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_discipline_id" Type="Int32" Nullable="false" />
+    <Property Name="p_room_id" Type="Int32" Nullable="false" />
+    <Property Name="p_checkin" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="p_checkout" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="Discipline" Relationship="ESTGestDbModel.FK_Presence_Discipline" FromRole="Presence" ToRole="Discipline" />
+    <NavigationProperty Name="Room" Relationship="ESTGestDbModel.FK_Presence_Room" FromRole="Presence" ToRole="Room" />
+    <NavigationProperty Name="UserPresenceLists" Relationship="ESTGestDbModel.FK_UserPresenceList_Presence" FromRole="Presence" ToRole="UserPresenceList" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="pr_id" />
+    </Key>
+    <Property Name="pr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pr_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pr_price" Type="Double" Nullable="false" />
+    <NavigationProperty Name="PurchaseProductLists" Relationship="ESTGestDbModel.FK_PurchaseProductList_Product" FromRole="Product" ToRole="PurchaseProductList" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="p_total" Type="Double" />
+    <NavigationProperty Name="PurchaseProductLists" Relationship="ESTGestDbModel.FK_PurchaseProductList_Purchase" FromRole="Purchase" ToRole="PurchaseProductList" />
+    <NavigationProperty Name="UserPurchaseLists" Relationship="ESTGestDbModel.FK_UserPurchaseList_Purchase" FromRole="Purchase" ToRole="UserPurchaseList" />
+  </EntityType>
+  <EntityType Name="PurchaseProductList">
+    <Key>
+      <PropertyRef Name="ppl_id" />
+    </Key>
+    <Property Name="ppl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ppl_purchase_id" Type="Int32" Nullable="false" />
+    <Property Name="ppl_product_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="ESTGestDbModel.FK_PurchaseProductList_Product" FromRole="PurchaseProductList" ToRole="Product" />
+    <NavigationProperty Name="Purchase" Relationship="ESTGestDbModel.FK_PurchaseProductList_Purchase" FromRole="PurchaseProductList" ToRole="Purchase" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RoleDescription" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserRoles" Relationship="ESTGestDbModel.FK_UserRoles_Roles" FromRole="Role" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="r_id" />
+    </Key>
+    <Property Name="r_id" Type="Int32" Nullable="false" />
+    <Property Name="r_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="r_arduino_id" Type="Int32" Nullable="false" />
+    <Property Name="r_dscontent_id" Type="Int32" Nullable="false" />
+    <Property Name="r_roomtype_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Arduinoes" Relationship="ESTGestDbModel.FK_Arduino_Room" FromRole="Room" ToRole="Arduino" />
+    <NavigationProperty Name="Presences" Relationship="ESTGestDbModel.FK_Presence_Room" FromRole="Room" ToRole="Presence" />
+    <NavigationProperty Name="RoomType" Relationship="ESTGestDbModel.FK_Room_RoomType" FromRole="Room" ToRole="RoomType" />
+    <NavigationProperty Name="ScheduleContent" Relationship="ESTGestDbModel.FK_Room_ScheduleContent" FromRole="Room" ToRole="ScheduleContent" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="rt_id" />
+    </Key>
+    <Property Name="rt_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rt_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Rooms" Relationship="ESTGestDbModel.FK_Room_RoomType" FromRole="RoomType" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="Schedule">
+    <Key>
+      <PropertyRef Name="sch_id" />
+    </Key>
+    <Property Name="sch_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sch_designation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CourseClasses" Relationship="ESTGestDbModel.FK_CourseClass_Schedule" FromRole="Schedule" ToRole="CourseClass" />
+    <NavigationProperty Name="ScheduleContents" Relationship="ESTGestDbModel.FK_ScheduleContent_Schedule" FromRole="Schedule" ToRole="ScheduleContent" />
+  </EntityType>
+  <EntityType Name="ScheduleContent">
+    <Key>
+      <PropertyRef Name="scontent_id" />
+    </Key>
+    <Property Name="scontent_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="scontent_sch_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Disciplines" Relationship="ESTGestDbModel.FK_Discipline_ScheduleContent" FromRole="ScheduleContent" ToRole="Discipline" />
+    <NavigationProperty Name="Rooms" Relationship="ESTGestDbModel.FK_Room_ScheduleContent" FromRole="ScheduleContent" ToRole="Room" />
+    <NavigationProperty Name="Schedule" Relationship="ESTGestDbModel.FK_ScheduleContent_Schedule" FromRole="ScheduleContent" ToRole="Schedule" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="u_id" />
+    </Key>
+    <Property Name="u_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="u_name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="u_number" Type="Int32" Nullable="false" />
+    <Property Name="u_course_id" Type="Int32" Nullable="false" />
+    <Property Name="u_courseclass_id" Type="Int32" Nullable="false" />
+    <Property Name="u_bankaccount_id" Type="Int32" Nullable="false" />
+    <Property Name="u_chargeaccref_id" Type="Int32" />
+    <Property Name="u_password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BankAccount" Relationship="ESTGestDbModel.FK_User_BankAccount" FromRole="User" ToRole="BankAccount" />
+    <NavigationProperty Name="ChargeAccountReference" Relationship="ESTGestDbModel.FK_User_ChargeAccountReference" FromRole="User" ToRole="ChargeAccountReference" />
+    <NavigationProperty Name="Course" Relationship="ESTGestDbModel.FK_User_Course" FromRole="User" ToRole="Course" />
+    <NavigationProperty Name="CourseClass" Relationship="ESTGestDbModel.FK_User_CourseClass" FromRole="User" ToRole="CourseClass" />
+    <NavigationProperty Name="UserDisciplineLists" Relationship="ESTGestDbModel.FK_UserDisciplineList_User" FromRole="User" ToRole="UserDisciplineList" />
+    <NavigationProperty Name="UserPresenceLists" Relationship="ESTGestDbModel.FK_UserPresenceList_User" FromRole="User" ToRole="UserPresenceList" />
+    <NavigationProperty Name="UserPurchaseLists" Relationship="ESTGestDbModel.FK_UserPurchaseList_User" FromRole="User" ToRole="UserPurchaseList" />
+    <NavigationProperty Name="UserRoles" Relationship="ESTGestDbModel.FK_UserRoles_User" FromRole="User" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserDisciplineList">
+    <Key>
+      <PropertyRef Name="udl_id" />
+    </Key>
+    <Property Name="udl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="udl_user_id" Type="Int32" Nullable="false" />
+    <Property Name="udl_discipline_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Discipline" Relationship="ESTGestDbModel.FK_UserDisciplineList_Discipline" FromRole="UserDisciplineList" ToRole="Discipline" />
+    <NavigationProperty Name="User" Relationship="ESTGestDbModel.FK_UserDisciplineList_User" FromRole="UserDisciplineList" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserPresenceList">
+    <Key>
+      <PropertyRef Name="upl_id" />
+    </Key>
+    <Property Name="upl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="upl_user_id" Type="Int32" Nullable="false" />
+    <Property Name="upl_presence_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Presence" Relationship="ESTGestDbModel.FK_UserPresenceList_Presence" FromRole="UserPresenceList" ToRole="Presence" />
+    <NavigationProperty Name="User" Relationship="ESTGestDbModel.FK_UserPresenceList_User" FromRole="UserPresenceList" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserPurchaseList">
+    <Key>
+      <PropertyRef Name="upl_id" />
+    </Key>
+    <Property Name="upl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="upl_purchase_id" Type="Int32" Nullable="false" />
+    <Property Name="upl_user_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Purchase" Relationship="ESTGestDbModel.FK_UserPurchaseList_Purchase" FromRole="UserPurchaseList" ToRole="Purchase" />
+    <NavigationProperty Name="User" Relationship="ESTGestDbModel.FK_UserPurchaseList_User" FromRole="UserPurchaseList" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="UserRoleId" />
+    </Key>
+    <Property Name="UserRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserRole1" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Role" Relationship="ESTGestDbModel.FK_UserRoles_Roles" FromRole="UserRole" ToRole="Role" />
+    <NavigationProperty Name="User" Relationship="ESTGestDbModel.FK_UserRoles_User" FromRole="UserRole" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Arduino_Room">
+    <End Type="ESTGestDbModel.Room" Role="Room" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Arduino" Role="Arduino" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="r_id" />
+      </Principal>
+      <Dependent Role="Arduino">
+        <PropertyRef Name="a_room_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_BankAccount">
+    <End Type="ESTGestDbModel.BankAccount" Role="BankAccount" Multiplicity="1" />
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BankAccount">
+        <PropertyRef Name="ba_id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="u_bankaccount_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_ChargeAccountReference">
+    <End Type="ESTGestDbModel.ChargeAccountReference" Role="ChargeAccountReference" Multiplicity="0..1" />
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChargeAccountReference">
+        <PropertyRef Name="car_id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="u_chargeaccref_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Course_CourseCategory">
+    <End Type="ESTGestDbModel.CourseCategory" Role="CourseCategory" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Course" Role="Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseCategory">
+        <PropertyRef Name="cc_id" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="c_coursecat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseClass_Course">
+    <End Type="ESTGestDbModel.Course" Role="Course" Multiplicity="1" />
+    <End Type="ESTGestDbModel.CourseClass" Role="CourseClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="c_id" />
+      </Principal>
+      <Dependent Role="CourseClass">
+        <PropertyRef Name="cc_course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_Course">
+    <End Type="ESTGestDbModel.Course" Role="Course" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Discipline" Role="Discipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="c_id" />
+      </Principal>
+      <Dependent Role="Discipline">
+        <PropertyRef Name="d_course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Course">
+    <End Type="ESTGestDbModel.Course" Role="Course" Multiplicity="1" />
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="c_id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="u_course_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CourseClass_Schedule">
+    <End Type="ESTGestDbModel.Schedule" Role="Schedule" Multiplicity="1" />
+    <End Type="ESTGestDbModel.CourseClass" Role="CourseClass" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="sch_id" />
+      </Principal>
+      <Dependent Role="CourseClass">
+        <PropertyRef Name="cc_schedule_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_CourseClass">
+    <End Type="ESTGestDbModel.CourseClass" Role="CourseClass" Multiplicity="1" />
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CourseClass">
+        <PropertyRef Name="cc_id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="u_courseclass_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_ScheduleContent">
+    <End Type="ESTGestDbModel.ScheduleContent" Role="ScheduleContent" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Discipline" Role="Discipline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScheduleContent">
+        <PropertyRef Name="scontent_id" />
+      </Principal>
+      <Dependent Role="Discipline">
+        <PropertyRef Name="d_scontent_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presence_Discipline">
+    <End Type="ESTGestDbModel.Discipline" Role="Discipline" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Presence" Role="Presence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="d_id" />
+      </Principal>
+      <Dependent Role="Presence">
+        <PropertyRef Name="p_discipline_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDisciplineList_Discipline">
+    <End Type="ESTGestDbModel.Discipline" Role="Discipline" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserDisciplineList" Role="UserDisciplineList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="d_id" />
+      </Principal>
+      <Dependent Role="UserDisciplineList">
+        <PropertyRef Name="udl_discipline_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Presence_Room">
+    <End Type="ESTGestDbModel.Room" Role="Room" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Presence" Role="Presence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="r_id" />
+      </Principal>
+      <Dependent Role="Presence">
+        <PropertyRef Name="p_room_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPresenceList_Presence">
+    <End Type="ESTGestDbModel.Presence" Role="Presence" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserPresenceList" Role="UserPresenceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presence">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="UserPresenceList">
+        <PropertyRef Name="upl_presence_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseProductList_Product">
+    <End Type="ESTGestDbModel.Product" Role="Product" Multiplicity="1" />
+    <End Type="ESTGestDbModel.PurchaseProductList" Role="PurchaseProductList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="pr_id" />
+      </Principal>
+      <Dependent Role="PurchaseProductList">
+        <PropertyRef Name="ppl_product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseProductList_Purchase">
+    <End Type="ESTGestDbModel.Purchase" Role="Purchase" Multiplicity="1" />
+    <End Type="ESTGestDbModel.PurchaseProductList" Role="PurchaseProductList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Purchase">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="PurchaseProductList">
+        <PropertyRef Name="ppl_purchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPurchaseList_Purchase">
+    <End Type="ESTGestDbModel.Purchase" Role="Purchase" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserPurchaseList" Role="UserPurchaseList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Purchase">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="UserPurchaseList">
+        <PropertyRef Name="upl_purchase_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_Roles">
+    <End Type="ESTGestDbModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserRole1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Room_RoomType">
+    <End Type="ESTGestDbModel.RoomType" Role="RoomType" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Room" Role="Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="rt_id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="r_roomtype_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Room_ScheduleContent">
+    <End Type="ESTGestDbModel.ScheduleContent" Role="ScheduleContent" Multiplicity="1" />
+    <End Type="ESTGestDbModel.Room" Role="Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScheduleContent">
+        <PropertyRef Name="scontent_id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="r_dscontent_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduleContent_Schedule">
+    <End Type="ESTGestDbModel.Schedule" Role="Schedule" Multiplicity="1" />
+    <End Type="ESTGestDbModel.ScheduleContent" Role="ScheduleContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Schedule">
+        <PropertyRef Name="sch_id" />
+      </Principal>
+      <Dependent Role="ScheduleContent">
+        <PropertyRef Name="scontent_sch_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDisciplineList_User">
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserDisciplineList" Role="UserDisciplineList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="UserDisciplineList">
+        <PropertyRef Name="udl_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPresenceList_User">
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserPresenceList" Role="UserPresenceList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="UserPresenceList">
+        <PropertyRef Name="upl_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPurchaseList_User">
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserPurchaseList" Role="UserPurchaseList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="UserPurchaseList">
+        <PropertyRef Name="upl_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_User">
+    <End Type="ESTGestDbModel.User" Role="User" Multiplicity="1" />
+    <End Type="ESTGestDbModel.UserRole" Role="UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="u_id" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

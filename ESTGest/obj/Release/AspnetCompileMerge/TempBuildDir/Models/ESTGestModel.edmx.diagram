@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="def7800f6baa432694010669da2e5e7d" Name="Diagram1" ZoomLevel="24">
+        <EntityTypeShape EntityType="ESTGestDbModel.Arduino" Width="1.5" PointX="7.5" PointY="17" />
+        <EntityTypeShape EntityType="ESTGestDbModel.BankAccount" Width="1.5" PointX="3" PointY="16.25" />
+        <EntityTypeShape EntityType="ESTGestDbModel.ChargeAccountReference" Width="1.5" PointX="3" PointY="6.375" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Course" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="ESTGestDbModel.CourseCategory" Width="1.5" PointX="1.5" PointY="4" />
+        <EntityTypeShape EntityType="ESTGestDbModel.CourseClass" Width="1.5" PointX="3" PointY="9.5" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Discipline" Width="1.5" PointX="8.25" PointY="12.25" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Presence" Width="1.5" PointX="10.5" PointY="12.625" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Product" Width="1.5" PointX="5.25" PointY="20.25" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Purchase" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="ESTGestDbModel.PurchaseProductList" Width="1.5" PointX="7.5" PointY="0.75" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Role" Width="1.5" PointX="5.25" PointY="3.875" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Room" Width="1.5" PointX="5.25" PointY="12.5" />
+        <EntityTypeShape EntityType="ESTGestDbModel.RoomType" Width="1.5" PointX="3" PointY="19" />
+        <EntityTypeShape EntityType="ESTGestDbModel.Schedule" Width="1.5" PointX="0.75" PointY="9.875" />
+        <EntityTypeShape EntityType="ESTGestDbModel.ScheduleContent" Width="1.5" PointX="3" PointY="12.875" />
+        <EntityTypeShape EntityType="ESTGestDbModel.User" Width="1.5" PointX="5.25" PointY="6.75" />
+        <EntityTypeShape EntityType="ESTGestDbModel.UserDisciplineList" Width="1.5" PointX="10.5" PointY="9.125" />
+        <EntityTypeShape EntityType="ESTGestDbModel.UserPresenceList" Width="1.5" PointX="12.75" PointY="9.875" />
+        <EntityTypeShape EntityType="ESTGestDbModel.UserPurchaseList" Width="1.5" PointX="7.5" PointY="7.75" />
+        <EntityTypeShape EntityType="ESTGestDbModel.UserRole" Width="1.5" PointX="7.5" PointY="4.75" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Arduino_Room" />
+        <AssociationConnector Association="ESTGestDbModel.FK_User_BankAccount" />
+        <AssociationConnector Association="ESTGestDbModel.FK_User_ChargeAccountReference" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Course_CourseCategory" />
+        <AssociationConnector Association="ESTGestDbModel.FK_CourseClass_Course" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Discipline_Course" />
+        <AssociationConnector Association="ESTGestDbModel.FK_User_Course" />
+        <AssociationConnector Association="ESTGestDbModel.FK_CourseClass_Schedule" />
+        <AssociationConnector Association="ESTGestDbModel.FK_User_CourseClass" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Discipline_ScheduleContent" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Presence_Discipline" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserDisciplineList_Discipline" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Presence_Room" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserPresenceList_Presence" />
+        <AssociationConnector Association="ESTGestDbModel.FK_PurchaseProductList_Product" />
+        <AssociationConnector Association="ESTGestDbModel.FK_PurchaseProductList_Purchase" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserPurchaseList_Purchase" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserRoles_Roles" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Room_RoomType" />
+        <AssociationConnector Association="ESTGestDbModel.FK_Room_ScheduleContent" />
+        <AssociationConnector Association="ESTGestDbModel.FK_ScheduleContent_Schedule" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserDisciplineList_User" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserPresenceList_User" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserPurchaseList_User" />
+        <AssociationConnector Association="ESTGestDbModel.FK_UserRoles_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

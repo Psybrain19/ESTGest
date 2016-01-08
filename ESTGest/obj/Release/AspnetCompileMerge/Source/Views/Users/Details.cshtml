@@ -1,0 +1,82 @@
+﻿@model ESTGest.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.u_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.u_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.u_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.u_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.u_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.u_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankAccount.ba_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankAccount.ba_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChargeAccountReference.car_reference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChargeAccountReference.car_reference)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.c_designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.c_designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseClass.cc_designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseClass.cc_designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Purchase.p_designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Purchase.p_designation)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.u_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

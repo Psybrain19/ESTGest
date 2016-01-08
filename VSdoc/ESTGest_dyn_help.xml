@@ -1,0 +1,3443 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="ESTGest" Title="SOLUTION-WIDE PROPERTIES Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController.About" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004B.html" LinkGroup="ESTGest">About Method {ESTGest.Controllers.HomeController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Tests.Controllers.HomeControllerTest.About" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000158.html" LinkGroup="ESTGest">About Method {ESTGest.Tests.Controllers.HomeControllerTest}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000B.html" LinkGroup="ESTGest">AccountController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.AddUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000144.html" LinkGroup="ESTGest">AddUser Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.AddUserRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000147.html" LinkGroup="ESTGest">AddUserRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.AddUsersToRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000071.html" LinkGroup="ESTGest">AddUsersToRoles Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000016.html" LinkGroup="ESTGest">AdminController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.ApplicationName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000076.html" LinkGroup="ESTGest">ApplicationName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.MvcApplication.Application_Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000068.html" LinkGroup="ESTGest">Application_Start Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Arduino" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009E.html" LinkGroup="ESTGest">Arduino Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Arduinoes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000089.html" LinkGroup="ESTGest">Arduinoes Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.Arduinoes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000100.html" LinkGroup="ESTGest">Arduinoes Property {ESTGest.Models.Room}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.AskForNewReference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000044_overloads--.html" LinkGroup="ESTGest">AskForNewReference Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.AskForNewReference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000045_overloads--.html" LinkGroup="ESTGest">AskForNewReference Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.AuthenticationType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014B.html" LinkGroup="ESTGest">AuthenticationType Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A3.html" LinkGroup="ESTGest">BankAccount Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount.BankAccount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A4.html" LinkGroup="ESTGest">BankAccount Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.BankAccount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000120.html" LinkGroup="ESTGest">BankAccount Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.BankAccountCreate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000024.html" LinkGroup="ESTGest">BankAccountCreate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.BankAccountDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000027.html" LinkGroup="ESTGest">BankAccountDelete Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.BankAccountDetails" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000026.html" LinkGroup="ESTGest">BankAccountDetails Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.BankAccountEdit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000025.html" LinkGroup="ESTGest">BankAccountEdit Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.BankAccountList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000023.html" LinkGroup="ESTGest">BankAccountList Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.BankAccounts" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008A.html" LinkGroup="ESTGest">BankAccounts Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002D.html" LinkGroup="ESTGest">BankAccountsController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.BundleConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000002.html" LinkGroup="ESTGest">BundleConfig Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A9.html" LinkGroup="ESTGest">ChargeAccountReference Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.ChargeAccountReference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AA.html" LinkGroup="ESTGest">ChargeAccountReference Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.ChargeAccountReference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000121.html" LinkGroup="ESTGest">ChargeAccountReference Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.ChargeAccountReferences" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008B.html" LinkGroup="ESTGest">ChargeAccountReferences Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003A.html" LinkGroup="ESTGest">ChargeAccountReferencesController Class</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.ChargeBankAccount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000038_overloads--.html" LinkGroup="ESTGest">ChargeBankAccount Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.ChargeBankAccount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000039_overloads--.html" LinkGroup="ESTGest">ChargeBankAccount Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Startup.Configuration" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000151.html" LinkGroup="ESTGest">Configuration Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Startup.ConfigureAuth" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000009.html" LinkGroup="ESTGest">ConfigureAuth Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ManageUserViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007D.html" LinkGroup="ESTGest">ConfirmPassword Property {ESTGest.Models.ManageUserViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RegisterViewModel.ConfirmPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000085.html" LinkGroup="ESTGest">ConfirmPassword Property {ESTGest.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController.Contact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004C.html" LinkGroup="ESTGest">Contact Method {ESTGest.Controllers.HomeController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Tests.Controllers.HomeControllerTest.Contact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000159.html" LinkGroup="ESTGest">Contact Method {ESTGest.Tests.Controllers.HomeControllerTest}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B1.html" LinkGroup="ESTGest">Course Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.Course" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B2.html" LinkGroup="ESTGest">Course Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.Course" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C5.html" LinkGroup="ESTGest">Course Property {ESTGest.Models.CourseClass}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.Course" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D2.html" LinkGroup="ESTGest">Course Property {ESTGest.Models.Discipline}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.Course" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000122.html" LinkGroup="ESTGest">Course Property {ESTGest.Models.User}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.CourseCategories" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008D.html" LinkGroup="ESTGest">CourseCategories Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseCategory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BA.html" LinkGroup="ESTGest">CourseCategory Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseCategory.CourseCategory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BB.html" LinkGroup="ESTGest">CourseCategory Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.CourseCategory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B6.html" LinkGroup="ESTGest">CourseCategory Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BF.html" LinkGroup="ESTGest">CourseClass Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.CourseClass" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C0.html" LinkGroup="ESTGest">CourseClass Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.CourseClass" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000123.html" LinkGroup="ESTGest">CourseClass Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.CourseClasses" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B7.html" LinkGroup="ESTGest">CourseClasses Property {ESTGest.Models.Course}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.CourseClasses" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008E.html" LinkGroup="ESTGest">CourseClasses Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule.CourseClasses" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010D.html" LinkGroup="ESTGest">CourseClasses Property {ESTGest.Models.Schedule}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseCategory.Courses" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BE.html" LinkGroup="ESTGest">Courses Property {ESTGest.Models.CourseCategory}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Courses" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008C.html" LinkGroup="ESTGest">Courses Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000031_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003E_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000051_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005C_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000032_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003F_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000052_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Create" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005D_overloads--.html" LinkGroup="ESTGest">Create Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.CreateRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006E.html" LinkGroup="ESTGest">CreateRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006B.html" LinkGroup="ESTGest">CustomRoleProvider Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Delete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000035.html" LinkGroup="ESTGest">Delete Method {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Delete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000042.html" LinkGroup="ESTGest">Delete Method {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Delete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000055.html" LinkGroup="ESTGest">Delete Method {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Delete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000061.html" LinkGroup="ESTGest">Delete Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.DeleteConfirmed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000036.html" LinkGroup="ESTGest">DeleteConfirmed Method {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.DeleteConfirmed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000043.html" LinkGroup="ESTGest">DeleteConfirmed Method {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.DeleteConfirmed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000056.html" LinkGroup="ESTGest">DeleteConfirmed Method {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.DeleteConfirmed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000062.html" LinkGroup="ESTGest">DeleteConfirmed Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.DeleteRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006F.html" LinkGroup="ESTGest">DeleteRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Details" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000030.html" LinkGroup="ESTGest">Details Method {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Details" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003D.html" LinkGroup="ESTGest">Details Method {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Details" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000050.html" LinkGroup="ESTGest">Details Method {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Details" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005B.html" LinkGroup="ESTGest">Details Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C8.html" LinkGroup="ESTGest">Discipline Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.Discipline" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C9.html" LinkGroup="ESTGest">Discipline Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.Discipline" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DD.html" LinkGroup="ESTGest">Discipline Property {ESTGest.Models.Presence}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList.Discipline" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012C.html" LinkGroup="ESTGest">Discipline Property {ESTGest.Models.UserDisciplineList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.Disciplines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B8.html" LinkGroup="ESTGest">Disciplines Property {ESTGest.Models.Course}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Disciplines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000008F.html" LinkGroup="ESTGest">Disciplines Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.Disciplines" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000113.html" LinkGroup="ESTGest">Disciplines Property {ESTGest.Models.ScheduleContent}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000037.html" LinkGroup="ESTGest">Dispose Method {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000046.html" LinkGroup="ESTGest">Dispose Method {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000057.html" LinkGroup="ESTGest">Dispose Method {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Dispose" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000063.html" LinkGroup="ESTGest">Dispose Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000001.html" LinkGroup="ESTGest">ESTGest Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000A.html" LinkGroup="ESTGest">ESTGest.Controllers Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006A.html" LinkGroup="ESTGest">ESTGest.Infrastructure Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000077.html" LinkGroup="ESTGest">ESTGest.Models Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Tests.Controllers" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000155.html" LinkGroup="ESTGest">ESTGest.Tests.Controllers Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.ViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000152.html" LinkGroup="ESTGest">ESTGest.ViewModel Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000086.html" LinkGroup="ESTGest">ESTGestDbEntities2 Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.ESTGestDbEntities2" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000087.html" LinkGroup="ESTGest">ESTGestDbEntities2 Constructor</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000034_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000041_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000033_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000040_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000053_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005F_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000054_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Edit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000060_overloads--.html" LinkGroup="ESTGest">Edit Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController.ErrorLogin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000049.html" LinkGroup="ESTGest">ErrorLogin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ExternalLoginConfirmationViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000078.html" LinkGroup="ESTGest">ExternalLoginConfirmationViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.FilterConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000004.html" LinkGroup="ESTGest">FilterConfig Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.FindUsersInRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000075.html" LinkGroup="ESTGest">FindUsersInRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.GetAllRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000074.html" LinkGroup="ESTGest">GetAllRoles Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.GetRolesForUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006D.html" LinkGroup="ESTGest">GetRolesForUser Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.GetUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000145_overloads--.html" LinkGroup="ESTGest">GetUser Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.GetUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000146_overloads--.html" LinkGroup="ESTGest">GetUser Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.GetUsersInRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000073.html" LinkGroup="ESTGest">GetUsersInRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000047.html" LinkGroup="ESTGest">HomeController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Tests.Controllers.HomeControllerTest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000156.html" LinkGroup="ESTGest">HomeControllerTest Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.Identity" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000150.html" LinkGroup="ESTGest">Identity Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000018.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.AdminController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002F.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003C.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004A.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.HomeController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004F.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005A.html" LinkGroup="ESTGest">Index Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Tests.Controllers.HomeControllerTest.Index" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000157.html" LinkGroup="ESTGest">Index Method {ESTGest.Tests.Controllers.HomeControllerTest}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.IndexAdmin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000066.html" LinkGroup="ESTGest">IndexAdmin Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.IsAuthenticated" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014C.html" LinkGroup="ESTGest">IsAuthenticated Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.IsInRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014F.html" LinkGroup="ESTGest">IsInRole Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.IsUserInRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000006C.html" LinkGroup="ESTGest">IsUserInRole Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000E_overloads--.html" LinkGroup="ESTGest">Login Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Login" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000010_overloads--.html" LinkGroup="ESTGest">Login Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.LoginViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007E.html" LinkGroup="ESTGest">LoginViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Logout" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000011.html" LinkGroup="ESTGest">Logout Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ManageUserViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007A.html" LinkGroup="ESTGest">ManageUserViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.MvcApplication" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000067.html" LinkGroup="ESTGest">MvcApplication Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.MvcApplication.MvcApplication_PostAuthenticateRequest" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000069.html" LinkGroup="ESTGest">MvcApplication_PostAuthenticateRequest Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.MyBudget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000015.html" LinkGroup="ESTGest">MyBudget Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.Name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014D.html" LinkGroup="ESTGest">Name Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ManageUserViewModel.NewPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007C.html" LinkGroup="ESTGest">NewPassword Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ManageUserViewModel.OldPassword" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007B.html" LinkGroup="ESTGest">OldPassword Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.OnModelCreating" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000088.html" LinkGroup="ESTGest">OnModelCreating Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.LoginViewModel.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000080.html" LinkGroup="ESTGest">Password Property {ESTGest.Models.LoginViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RegisterViewModel.Password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000084.html" LinkGroup="ESTGest">Password Property {ESTGest.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D6.html" LinkGroup="ESTGest">Presence Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.Presence" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D7.html" LinkGroup="ESTGest">Presence Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList.Presence" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000132.html" LinkGroup="ESTGest">Presence Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.Presences" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D4.html" LinkGroup="ESTGest">Presences Property {ESTGest.Models.Discipline}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Presences" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000090.html" LinkGroup="ESTGest">Presences Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.Presences" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000101.html" LinkGroup="ESTGest">Presences Property {ESTGest.Models.Room}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E0.html" LinkGroup="ESTGest">Product Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product.Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E1.html" LinkGroup="ESTGest">Product Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList.Product" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F1.html" LinkGroup="ESTGest">Product Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ProductCreate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001A.html" LinkGroup="ESTGest">ProductCreate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ProductDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001D.html" LinkGroup="ESTGest">ProductDelete Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ProductDetails" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001C.html" LinkGroup="ESTGest">ProductDetails Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.ProductDropDownList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000064.html" LinkGroup="ESTGest">ProductDropDownList Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ProductEdit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001B.html" LinkGroup="ESTGest">ProductEdit Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ProductList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000019.html" LinkGroup="ESTGest">ProductList Method {ESTGest.Controllers.AdminController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.ProductList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000005E.html" LinkGroup="ESTGest">ProductList Method {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Products" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000091.html" LinkGroup="ESTGest">Products Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004D.html" LinkGroup="ESTGest">ProductsController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Protected" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000F.html" LinkGroup="ESTGest">Protected Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E6.html" LinkGroup="ESTGest">Purchase Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.Purchase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E7.html" LinkGroup="ESTGest">Purchase Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList.Purchase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F2.html" LinkGroup="ESTGest">Purchase Property {ESTGest.Models.PurchaseProductList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList.Purchase" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000138.html" LinkGroup="ESTGest">Purchase Property {ESTGest.Models.UserPurchaseList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.PurchaseCreate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000029.html" LinkGroup="ESTGest">PurchaseCreate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.PurchaseDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002C.html" LinkGroup="ESTGest">PurchaseDelete Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.PurchaseDetails" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002B.html" LinkGroup="ESTGest">PurchaseDetails Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.PurchaseEdit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002A.html" LinkGroup="ESTGest">PurchaseEdit Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.PurchaseList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000028.html" LinkGroup="ESTGest">PurchaseList Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000ED.html" LinkGroup="ESTGest">PurchaseProductList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.PurchaseProductLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000093.html" LinkGroup="ESTGest">PurchaseProductLists Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product.PurchaseProductLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E5.html" LinkGroup="ESTGest">PurchaseProductLists Property {ESTGest.Models.Product}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.PurchaseProductLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000EB.html" LinkGroup="ESTGest">PurchaseProductLists Property {ESTGest.Models.Purchase}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.ViewModel.PurchaseTotal" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000153.html" LinkGroup="ESTGest">PurchaseTotal Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Purchases" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000092.html" LinkGroup="ESTGest">Purchases Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000058.html" LinkGroup="ESTGest">PurchasesController Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.PurchasesTotalAmount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000065.html" LinkGroup="ESTGest">PurchasesTotalAmount Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ReferenceCreate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001F.html" LinkGroup="ESTGest">ReferenceCreate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ReferenceDelete" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000022.html" LinkGroup="ESTGest">ReferenceDelete Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ReferenceDetails" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000021.html" LinkGroup="ESTGest">ReferenceDetails Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ReferenceEdit" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000020.html" LinkGroup="ESTGest">ReferenceEdit Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.ReferenceList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000001E.html" LinkGroup="ESTGest">ReferenceList Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Register" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000013_overloads--.html" LinkGroup="ESTGest">Register Method</LItem>
+      </Links>
+   </Context>
+   
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.Register" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000014_overloads--.html" LinkGroup="ESTGest">Register Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.BundleConfig.RegisterBundles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000003.html" LinkGroup="ESTGest">RegisterBundles Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.FilterConfig.RegisterGlobalFilters" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000005.html" LinkGroup="ESTGest">RegisterGlobalFilters Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.RouteConfig.RegisterRoutes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000007.html" LinkGroup="ESTGest">RegisterRoutes Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RegisterViewModel" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000082.html" LinkGroup="ESTGest">RegisterViewModel Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.LoginViewModel.RememberMe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000081.html" LinkGroup="ESTGest">RememberMe Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.RemoveUsersFromRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000072.html" LinkGroup="ESTGest">RemoveUsersFromRoles Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F3.html" LinkGroup="ESTGest">Role Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role.Role" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F4.html" LinkGroup="ESTGest">Role Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole.Role" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013E.html" LinkGroup="ESTGest">Role Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role.RoleDescription" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F7.html" LinkGroup="ESTGest">RoleDescription Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Infrastructure.CustomRoleProvider.RoleExists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000070.html" LinkGroup="ESTGest">RoleExists Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role.RoleId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F5.html" LinkGroup="ESTGest">RoleId Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role.RoleName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F6.html" LinkGroup="ESTGest">RoleName Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Roles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000094.html" LinkGroup="ESTGest">Roles Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F9.html" LinkGroup="ESTGest">Room Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.Room" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FA.html" LinkGroup="ESTGest">Room Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Arduino.Room" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A2.html" LinkGroup="ESTGest">Room Property {ESTGest.Models.Arduino}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.Room" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DE.html" LinkGroup="ESTGest">Room Property {ESTGest.Models.Presence}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RoomType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000104.html" LinkGroup="ESTGest">RoomType Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RoomType.RoomType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000105.html" LinkGroup="ESTGest">RoomType Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.RoomType" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000102.html" LinkGroup="ESTGest">RoomType Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.RoomTypes" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000096.html" LinkGroup="ESTGest">RoomTypes Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Rooms" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000095.html" LinkGroup="ESTGest">Rooms Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RoomType.Rooms" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000108.html" LinkGroup="ESTGest">Rooms Property {ESTGest.Models.RoomType}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.Rooms" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000114.html" LinkGroup="ESTGest">Rooms Property {ESTGest.Models.ScheduleContent}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.RouteConfig" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000006.html" LinkGroup="ESTGest">RouteConfig Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="SOLUTION-WIDE PROPERTIES Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000000.html" LinkGroup="ESTGest">SOLUTION-WIDE PROPERTIES Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000140.html" LinkGroup="ESTGest">SQLMemberShipProvider Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.SQLMemberShipProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000142.html" LinkGroup="ESTGest">SQLMemberShipProvider Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000109.html" LinkGroup="ESTGest">Schedule Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule.Schedule" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010A.html" LinkGroup="ESTGest">Schedule Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.Schedule" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C6.html" LinkGroup="ESTGest">Schedule Property {ESTGest.Models.CourseClass}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.Schedule" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000115.html" LinkGroup="ESTGest">Schedule Property {ESTGest.Models.ScheduleContent}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010F.html" LinkGroup="ESTGest">ScheduleContent Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.ScheduleContent" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000110.html" LinkGroup="ESTGest">ScheduleContent Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.ScheduleContent" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D3.html" LinkGroup="ESTGest">ScheduleContent Property {ESTGest.Models.Discipline}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.ScheduleContent" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000103.html" LinkGroup="ESTGest">ScheduleContent Property {ESTGest.Models.Room}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.ScheduleContents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000098.html" LinkGroup="ESTGest">ScheduleContents Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule.ScheduleContents" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010E.html" LinkGroup="ESTGest">ScheduleContents Property {ESTGest.Models.Schedule}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Schedules" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000097.html" LinkGroup="ESTGest">Schedules Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.SetupFormsAuthTicket" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000012.html" LinkGroup="ESTGest">SetupFormsAuthTicket Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Startup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000008.html" LinkGroup="ESTGest">Startup Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.ViewModel.PurchaseTotal.Total" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000154.html" LinkGroup="ESTGest">Total Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000116.html" LinkGroup="ESTGest">User Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000117.html" LinkGroup="ESTGest">User Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012D.html" LinkGroup="ESTGest">User Property {ESTGest.Models.UserDisciplineList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000133.html" LinkGroup="ESTGest">User Property {ESTGest.Models.UserPresenceList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000139.html" LinkGroup="ESTGest">User Property {ESTGest.Models.UserPurchaseList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole.User" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013F.html" LinkGroup="ESTGest">User Property {ESTGest.Models.UserRole}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000128.html" LinkGroup="ESTGest">UserDisciplineList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.UserDisciplineLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D5.html" LinkGroup="ESTGest">UserDisciplineLists Property {ESTGest.Models.Discipline}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.UserDisciplineLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009A.html" LinkGroup="ESTGest">UserDisciplineLists Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.UserDisciplineLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000124.html" LinkGroup="ESTGest">UserDisciplineLists Property {ESTGest.Models.User}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.UserId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014E.html" LinkGroup="ESTGest">UserId Property {ESTGest.Models.UserIdentity}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole.UserId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013C.html" LinkGroup="ESTGest">UserId Property {ESTGest.Models.UserRole}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000148.html" LinkGroup="ESTGest">UserIdentity Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity.UserIdentity" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000014A.html" LinkGroup="ESTGest">UserIdentity Constructor</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ExternalLoginConfirmationViewModel.UserName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000079.html" LinkGroup="ESTGest">UserName Property {ESTGest.Models.ExternalLoginConfirmationViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.LoginViewModel.UserName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000007F.html" LinkGroup="ESTGest">UserName Property {ESTGest.Models.LoginViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RegisterViewModel.UserName" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000083.html" LinkGroup="ESTGest">UserName Property {ESTGest.Models.RegisterViewModel}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012E.html" LinkGroup="ESTGest">UserPresenceList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.UserPresenceLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009B.html" LinkGroup="ESTGest">UserPresenceLists Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.UserPresenceLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DF.html" LinkGroup="ESTGest">UserPresenceLists Property {ESTGest.Models.Presence}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.UserPresenceLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000125.html" LinkGroup="ESTGest">UserPresenceLists Property {ESTGest.Models.User}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000134.html" LinkGroup="ESTGest">UserPurchaseList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.UserPurchaseLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009C.html" LinkGroup="ESTGest">UserPurchaseLists Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.UserPurchaseLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000EC.html" LinkGroup="ESTGest">UserPurchaseLists Property {ESTGest.Models.Purchase}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.UserPurchaseLists" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000126.html" LinkGroup="ESTGest">UserPurchaseLists Property {ESTGest.Models.User}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013A.html" LinkGroup="ESTGest">UserRole Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole.UserRole1" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013D.html" LinkGroup="ESTGest">UserRole1 Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserRole.UserRoleId" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000013B.html" LinkGroup="ESTGest">UserRoleId Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.UserRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009D.html" LinkGroup="ESTGest">UserRoles Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Role.UserRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F8.html" LinkGroup="ESTGest">UserRoles Property {ESTGest.Models.Role}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.UserRoles" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000127.html" LinkGroup="ESTGest">UserRoles Property {ESTGest.Models.User}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount.Users" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A8.html" LinkGroup="ESTGest">Users Property {ESTGest.Models.BankAccount}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.Users" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B0.html" LinkGroup="ESTGest">Users Property {ESTGest.Models.ChargeAccountReference}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.Users" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C7.html" LinkGroup="ESTGest">Users Property {ESTGest.Models.CourseClass}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.Users" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B9.html" LinkGroup="ESTGest">Users Property {ESTGest.Models.Course}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ESTGestDbEntities2.Users" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000099.html" LinkGroup="ESTGest">Users Property {ESTGest.Models.ESTGestDbEntities2}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider.ValidateUser" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000143.html" LinkGroup="ESTGest">ValidateUser Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.SQLMemberShipProvider._db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000141.html" LinkGroup="ESTGest">_db Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserIdentity._ticket" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000149.html" LinkGroup="ESTGest">_ticket Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Arduino.a_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000009F.html" LinkGroup="ESTGest">a_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Arduino.a_room_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A1.html" LinkGroup="ESTGest">a_room_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Arduino.a_value" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A0.html" LinkGroup="ESTGest">a_value Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount.ba_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A5.html" LinkGroup="ESTGest">ba_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount.ba_number" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A6.html" LinkGroup="ESTGest">ba_number Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.BankAccount.bar_cash" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000A7.html" LinkGroup="ESTGest">bar_cash Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.c_coursecat_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B5.html" LinkGroup="ESTGest">c_coursecat_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.c_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B4.html" LinkGroup="ESTGest">c_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Course.c_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000B3.html" LinkGroup="ESTGest">c_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.car_amount" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AF.html" LinkGroup="ESTGest">car_amount Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.car_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AB.html" LinkGroup="ESTGest">car_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.car_reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AC.html" LinkGroup="ESTGest">car_reference Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.car_state" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AD.html" LinkGroup="ESTGest">car_state Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ChargeAccountReference.car_valtime" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000AE.html" LinkGroup="ESTGest">car_valtime Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.cc_course_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C3.html" LinkGroup="ESTGest">cc_course_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseCategory.cc_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BD.html" LinkGroup="ESTGest">cc_designation Property {ESTGest.Models.CourseCategory}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.cc_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C2.html" LinkGroup="ESTGest">cc_designation Property {ESTGest.Models.CourseClass}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseCategory.cc_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000BC.html" LinkGroup="ESTGest">cc_id Property {ESTGest.Models.CourseCategory}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.cc_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C1.html" LinkGroup="ESTGest">cc_id Property {ESTGest.Models.CourseClass}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.CourseClass.cc_schedule_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000C4.html" LinkGroup="ESTGest">cc_schedule_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_course_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D0.html" LinkGroup="ESTGest">d_course_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_credits" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CE.html" LinkGroup="ESTGest">d_credits Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CB.html" LinkGroup="ESTGest">d_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CA.html" LinkGroup="ESTGest">d_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_scontent_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D1.html" LinkGroup="ESTGest">d_scontent_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_user_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CF.html" LinkGroup="ESTGest">d_user_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_value" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CC.html" LinkGroup="ESTGest">d_value Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Discipline.d_yearcourse" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000CD.html" LinkGroup="ESTGest">d_yearcourse Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000C.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.AccountController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AdminController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000017.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.AdminController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.BankAccountsController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000002E.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.BankAccountsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ChargeAccountReferencesController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000003B.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.ChargeAccountReferencesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.HomeController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000048.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.HomeController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.ProductsController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000004E.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.ProductsController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.PurchasesController.db" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000059.html" LinkGroup="ESTGest">db Field {ESTGest.Controllers.PurchasesController}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.p_checkin" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DB.html" LinkGroup="ESTGest">p_checkin Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.p_checkout" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DC.html" LinkGroup="ESTGest">p_checkout Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.p_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E9.html" LinkGroup="ESTGest">p_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.p_discipline_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D9.html" LinkGroup="ESTGest">p_discipline_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.p_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000D8.html" LinkGroup="ESTGest">p_id Property {ESTGest.Models.Presence}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.p_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E8.html" LinkGroup="ESTGest">p_id Property {ESTGest.Models.Purchase}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Presence.p_room_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000DA.html" LinkGroup="ESTGest">p_room_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Purchase.p_total" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000EA.html" LinkGroup="ESTGest">p_total Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList.ppl_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000EE.html" LinkGroup="ESTGest">ppl_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList.ppl_product_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000F0.html" LinkGroup="ESTGest">ppl_product_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.PurchaseProductList.ppl_purchase_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000EF.html" LinkGroup="ESTGest">ppl_purchase_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product.pr_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E3.html" LinkGroup="ESTGest">pr_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product.pr_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E2.html" LinkGroup="ESTGest">pr_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Product.pr_price" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000E4.html" LinkGroup="ESTGest">pr_price Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.r_arduino_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FD.html" LinkGroup="ESTGest">r_arduino_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.r_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FC.html" LinkGroup="ESTGest">r_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.r_dscontent_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FE.html" LinkGroup="ESTGest">r_dscontent_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.r_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FB.html" LinkGroup="ESTGest">r_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Room.r_roomtype_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_00000000000000FF.html" LinkGroup="ESTGest">r_roomtype_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RoomType.rt_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000107.html" LinkGroup="ESTGest">rt_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.RoomType.rt_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000106.html" LinkGroup="ESTGest">rt_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule.sch_designation" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010C.html" LinkGroup="ESTGest">sch_designation Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.Schedule.sch_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000010B.html" LinkGroup="ESTGest">sch_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.scontent_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000111.html" LinkGroup="ESTGest">scontent_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.ScheduleContent.scontent_sch_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000112.html" LinkGroup="ESTGest">scontent_sch_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Controllers.AccountController.sqlProvider" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000000D.html" LinkGroup="ESTGest">sqlProvider Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_bankaccount_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011D.html" LinkGroup="ESTGest">u_bankaccount_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_chargeaccref_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011E.html" LinkGroup="ESTGest">u_chargeaccref_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_course_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011B.html" LinkGroup="ESTGest">u_course_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_courseclass_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011C.html" LinkGroup="ESTGest">u_courseclass_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000118.html" LinkGroup="ESTGest">u_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_name" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000119.html" LinkGroup="ESTGest">u_name Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_number" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011A.html" LinkGroup="ESTGest">u_number Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.User.u_password" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000011F.html" LinkGroup="ESTGest">u_password Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList.udl_discipline_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012B.html" LinkGroup="ESTGest">udl_discipline_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList.udl_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000129.html" LinkGroup="ESTGest">udl_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserDisciplineList.udl_user_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012A.html" LinkGroup="ESTGest">udl_user_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList.upl_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_000000000000012F.html" LinkGroup="ESTGest">upl_id Property {ESTGest.Models.UserPresenceList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList.upl_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000135.html" LinkGroup="ESTGest">upl_id Property {ESTGest.Models.UserPurchaseList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList.upl_presence_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000131.html" LinkGroup="ESTGest">upl_presence_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList.upl_purchase_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000136.html" LinkGroup="ESTGest">upl_purchase_id Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPresenceList.upl_user_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000130.html" LinkGroup="ESTGest">upl_user_id Property {ESTGest.Models.UserPresenceList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ESTGest.Models.UserPurchaseList.upl_user_id" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:ESTGest.chm::/topic_0000000000000137.html" LinkGroup="ESTGest">upl_user_id Property {ESTGest.Models.UserPurchaseList}</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+
