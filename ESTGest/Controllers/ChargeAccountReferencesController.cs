@@ -46,10 +46,18 @@ namespace ESTGest.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "car_id,car_reference,car_state,car_valtime,car_amount")] ChargeAccountReference chargeAccountReference)
+        public ActionResult Create([Bind(Include = "car_id,car_amount")] ChargeAccountReference chargeAccountReference)
         {
+            Random rnd = new Random();
+            int reference = rnd.Next(1, 999);
+            while(reference.ToString().Length < 12)
+            {
+                reference = rnd.Next(1, 999);
+            }           
             if (ModelState.IsValid)
             {
+                chargeAccountReference.car_reference = reference.ToString();
+                chargeAccountReference.car_valtime = DateTime.Now.AddDays(30.0);
                 db.ChargeAccountReferences.Add(chargeAccountReference);
                 db.SaveChanges();
                 return RedirectToAction("ReferenceList", "Admin", chargeAccountReference);
