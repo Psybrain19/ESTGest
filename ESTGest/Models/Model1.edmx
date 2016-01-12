@@ -1,0 +1,1502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ESTGestDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Arduino">
+          <Key>
+            <PropertyRef Name="a_id" />
+          </Key>
+          <Property Name="a_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="a_value" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="a_room_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BankAccount">
+          <Key>
+            <PropertyRef Name="ba_id" />
+          </Key>
+          <Property Name="ba_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ba_number" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="bar_cash" Type="float" />
+        </EntityType>
+        <EntityType Name="ChargeAccountReference">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="car_reference" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="car_state" Type="int" Nullable="false" />
+          <Property Name="car_valtime" Type="datetime" Nullable="false" />
+          <Property Name="car_amount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="c_id" />
+          </Key>
+          <Property Name="c_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="c_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="c_coursecat_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CourseCategory">
+          <Key>
+            <PropertyRef Name="cc_id" />
+          </Key>
+          <Property Name="cc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cc_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CourseClass">
+          <Key>
+            <PropertyRef Name="cc_id" />
+          </Key>
+          <Property Name="cc_id" Type="int" Nullable="false" />
+          <Property Name="cc_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="cc_course_id" Type="int" Nullable="false" />
+          <Property Name="cc_schedule_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="d_id" />
+          </Key>
+          <Property Name="d_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="d_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="d_value" Type="int" />
+          <Property Name="d_yearcourse" Type="int" />
+          <Property Name="d_credits" Type="int" />
+          <Property Name="d_user_id" Type="int" Nullable="false" />
+          <Property Name="d_course_id" Type="int" Nullable="false" />
+          <Property Name="d_scontent_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Presence">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="p_discipline_id" Type="int" Nullable="false" />
+          <Property Name="p_room_id" Type="int" Nullable="false" />
+          <Property Name="p_checkin" Type="time" Precision="7" Nullable="false" />
+          <Property Name="p_checkout" Type="time" Precision="7" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="pr_id" />
+          </Key>
+          <Property Name="pr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="pr_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="pr_price" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Purchase">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="p_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="p_total" Type="float" />
+        </EntityType>
+        <EntityType Name="PurchaseProductList">
+          <Key>
+            <PropertyRef Name="ppl_id" />
+          </Key>
+          <Property Name="ppl_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ppl_purchase_id" Type="int" Nullable="false" />
+          <Property Name="ppl_product_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RoleDescription" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="r_id" />
+          </Key>
+          <Property Name="r_id" Type="int" Nullable="false" />
+          <Property Name="r_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="r_arduino_id" Type="int" Nullable="false" />
+          <Property Name="r_dscontent_id" Type="int" Nullable="false" />
+          <Property Name="r_roomtype_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RoomType">
+          <Key>
+            <PropertyRef Name="rt_id" />
+          </Key>
+          <Property Name="rt_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="rt_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Schedule">
+          <Key>
+            <PropertyRef Name="sch_id" />
+          </Key>
+          <Property Name="sch_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sch_designation" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ScheduleContent">
+          <Key>
+            <PropertyRef Name="scontent_id" />
+          </Key>
+          <Property Name="scontent_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="scontent_sch_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="u_id" />
+          </Key>
+          <Property Name="u_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="u_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="u_number" Type="int" Nullable="false" />
+          <Property Name="u_course_id" Type="int" Nullable="false" />
+          <Property Name="u_courseclass_id" Type="int" Nullable="false" />
+          <Property Name="u_bankaccount_id" Type="int" Nullable="false" />
+          <Property Name="u_chargeaccref_id" Type="int" />
+          <Property Name="u_password" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="UserDisciplineList">
+          <Key>
+            <PropertyRef Name="udl_id" />
+          </Key>
+          <Property Name="udl_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="udl_user_id" Type="int" Nullable="false" />
+          <Property Name="udl_discipline_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPresenceList">
+          <Key>
+            <PropertyRef Name="upl_id" />
+          </Key>
+          <Property Name="upl_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="upl_user_id" Type="int" Nullable="false" />
+          <Property Name="upl_presence_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPurchaseList">
+          <Key>
+            <PropertyRef Name="upl_id" />
+          </Key>
+          <Property Name="upl_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="upl_purchase_id" Type="int" Nullable="false" />
+          <Property Name="upl_user_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserRoles">
+          <Key>
+            <PropertyRef Name="UserRoleId" />
+          </Key>
+          <Property Name="UserRoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="UserRole" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Arduino_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="1" />
+          <End Role="Arduino" Type="Self.Arduino" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="r_id" />
+            </Principal>
+            <Dependent Role="Arduino">
+              <PropertyRef Name="a_room_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Course_CourseCategory">
+          <End Role="CourseCategory" Type="Self.CourseCategory" Multiplicity="1" />
+          <End Role="Course" Type="Self.Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CourseCategory">
+              <PropertyRef Name="cc_id" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="c_coursecat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseClass_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="CourseClass">
+              <PropertyRef Name="cc_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseClass_Schedule">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="sch_id" />
+            </Principal>
+            <Dependent Role="CourseClass">
+              <PropertyRef Name="cc_schedule_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="Discipline">
+              <PropertyRef Name="d_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_ScheduleContent">
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="1" />
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScheduleContent">
+              <PropertyRef Name="scontent_id" />
+            </Principal>
+            <Dependent Role="Discipline">
+              <PropertyRef Name="d_scontent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Presence_Discipline">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="Presence" Type="Self.Presence" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="d_id" />
+            </Principal>
+            <Dependent Role="Presence">
+              <PropertyRef Name="p_discipline_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Presence_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="1" />
+          <End Role="Presence" Type="Self.Presence" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="r_id" />
+            </Principal>
+            <Dependent Role="Presence">
+              <PropertyRef Name="p_room_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseProductList_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="PurchaseProductList" Type="Self.PurchaseProductList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="pr_id" />
+            </Principal>
+            <Dependent Role="PurchaseProductList">
+              <PropertyRef Name="ppl_product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseProductList_Purchase">
+          <End Role="Purchase" Type="Self.Purchase" Multiplicity="1" />
+          <End Role="PurchaseProductList" Type="Self.PurchaseProductList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchase">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="PurchaseProductList">
+              <PropertyRef Name="ppl_purchase_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_RoomType">
+          <End Role="RoomType" Type="Self.RoomType" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoomType">
+              <PropertyRef Name="rt_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="r_roomtype_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_ScheduleContent">
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScheduleContent">
+              <PropertyRef Name="scontent_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="r_dscontent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ScheduleContent_Schedule">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="sch_id" />
+            </Principal>
+            <Dependent Role="ScheduleContent">
+              <PropertyRef Name="scontent_sch_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_BankAccount">
+          <End Role="BankAccount" Type="Self.BankAccount" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BankAccount">
+              <PropertyRef Name="ba_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_bankaccount_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_ChargeAccountReference">
+          <End Role="ChargeAccountReference" Type="Self.ChargeAccountReference" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChargeAccountReference">
+              <PropertyRef Name="car_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_chargeaccref_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_CourseClass">
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CourseClass">
+              <PropertyRef Name="cc_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_courseclass_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDisciplineList_Discipline">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="UserDisciplineList" Type="Self.UserDisciplineList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="d_id" />
+            </Principal>
+            <Dependent Role="UserDisciplineList">
+              <PropertyRef Name="udl_discipline_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDisciplineList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserDisciplineList" Type="Self.UserDisciplineList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserDisciplineList">
+              <PropertyRef Name="udl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPresenceList_Presence">
+          <End Role="Presence" Type="Self.Presence" Multiplicity="1" />
+          <End Role="UserPresenceList" Type="Self.UserPresenceList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Presence">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="UserPresenceList">
+              <PropertyRef Name="upl_presence_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPresenceList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserPresenceList" Type="Self.UserPresenceList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserPresenceList">
+              <PropertyRef Name="upl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPurchaseList_Purchase">
+          <End Role="Purchase" Type="Self.Purchase" Multiplicity="1" />
+          <End Role="UserPurchaseList" Type="Self.UserPurchaseList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchase">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="UserPurchaseList">
+              <PropertyRef Name="upl_purchase_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPurchaseList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserPurchaseList" Type="Self.UserPurchaseList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserPurchaseList">
+              <PropertyRef Name="upl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserRoles_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserRoles">
+              <PropertyRef Name="UserRole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserRoles_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ESTGestDBModelStoreContainer">
+          <EntitySet Name="Arduino" EntityType="Self.Arduino" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BankAccount" EntityType="Self.BankAccount" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ChargeAccountReference" EntityType="Self.ChargeAccountReference" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CourseCategory" EntityType="Self.CourseCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CourseClass" EntityType="Self.CourseClass" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Presence" EntityType="Self.Presence" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Purchase" EntityType="Self.Purchase" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PurchaseProductList" EntityType="Self.PurchaseProductList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RoomType" EntityType="Self.RoomType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ScheduleContent" EntityType="Self.ScheduleContent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserDisciplineList" EntityType="Self.UserDisciplineList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserPresenceList" EntityType="Self.UserPresenceList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserPurchaseList" EntityType="Self.UserPurchaseList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Arduino_Room" Association="Self.FK_Arduino_Room">
+            <End Role="Room" EntitySet="Room" />
+            <End Role="Arduino" EntitySet="Arduino" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Course_CourseCategory" Association="Self.FK_Course_CourseCategory">
+            <End Role="CourseCategory" EntitySet="CourseCategory" />
+            <End Role="Course" EntitySet="Course" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseClass_Course" Association="Self.FK_CourseClass_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="CourseClass" EntitySet="CourseClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseClass_Schedule" Association="Self.FK_CourseClass_Schedule">
+            <End Role="Schedule" EntitySet="Schedule" />
+            <End Role="CourseClass" EntitySet="CourseClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_Course" Association="Self.FK_Discipline_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="Discipline" EntitySet="Discipline" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_ScheduleContent" Association="Self.FK_Discipline_ScheduleContent">
+            <End Role="ScheduleContent" EntitySet="ScheduleContent" />
+            <End Role="Discipline" EntitySet="Discipline" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Presence_Discipline" Association="Self.FK_Presence_Discipline">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="Presence" EntitySet="Presence" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Presence_Room" Association="Self.FK_Presence_Room">
+            <End Role="Room" EntitySet="Room" />
+            <End Role="Presence" EntitySet="Presence" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseProductList_Product" Association="Self.FK_PurchaseProductList_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="PurchaseProductList" EntitySet="PurchaseProductList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseProductList_Purchase" Association="Self.FK_PurchaseProductList_Purchase">
+            <End Role="Purchase" EntitySet="Purchase" />
+            <End Role="PurchaseProductList" EntitySet="PurchaseProductList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_RoomType" Association="Self.FK_Room_RoomType">
+            <End Role="RoomType" EntitySet="RoomType" />
+            <End Role="Room" EntitySet="Room" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_ScheduleContent" Association="Self.FK_Room_ScheduleContent">
+            <End Role="ScheduleContent" EntitySet="ScheduleContent" />
+            <End Role="Room" EntitySet="Room" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ScheduleContent_Schedule" Association="Self.FK_ScheduleContent_Schedule">
+            <End Role="Schedule" EntitySet="Schedule" />
+            <End Role="ScheduleContent" EntitySet="ScheduleContent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_BankAccount" Association="Self.FK_User_BankAccount">
+            <End Role="BankAccount" EntitySet="BankAccount" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_ChargeAccountReference" Association="Self.FK_User_ChargeAccountReference">
+            <End Role="ChargeAccountReference" EntitySet="ChargeAccountReference" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Course" Association="Self.FK_User_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_CourseClass" Association="Self.FK_User_CourseClass">
+            <End Role="CourseClass" EntitySet="CourseClass" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDisciplineList_Discipline" Association="Self.FK_UserDisciplineList_Discipline">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="UserDisciplineList" EntitySet="UserDisciplineList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDisciplineList_User" Association="Self.FK_UserDisciplineList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserDisciplineList" EntitySet="UserDisciplineList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPresenceList_Presence" Association="Self.FK_UserPresenceList_Presence">
+            <End Role="Presence" EntitySet="Presence" />
+            <End Role="UserPresenceList" EntitySet="UserPresenceList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPresenceList_User" Association="Self.FK_UserPresenceList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserPresenceList" EntitySet="UserPresenceList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPurchaseList_Purchase" Association="Self.FK_UserPurchaseList_Purchase">
+            <End Role="Purchase" EntitySet="Purchase" />
+            <End Role="UserPurchaseList" EntitySet="UserPurchaseList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPurchaseList_User" Association="Self.FK_UserPurchaseList_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserPurchaseList" EntitySet="UserPurchaseList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_Roles" Association="Self.FK_UserRoles_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UserRoles" EntitySet="UserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_User" Association="Self.FK_UserRoles_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserRoles" EntitySet="UserRoles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ESTGestDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Arduino">
+          <Key>
+            <PropertyRef Name="a_id" />
+          </Key>
+          <Property Name="a_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="a_value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="a_room_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Room" Relationship="Self.FK_Arduino_Room" FromRole="Arduino" ToRole="Room" />
+        </EntityType>
+        <EntityType Name="BankAccount">
+          <Key>
+            <PropertyRef Name="ba_id" />
+          </Key>
+          <Property Name="ba_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ba_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="bar_cash" Type="Double" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_BankAccount" FromRole="BankAccount" ToRole="User" />
+        </EntityType>
+        <EntityType Name="ChargeAccountReference">
+          <Key>
+            <PropertyRef Name="car_id" />
+          </Key>
+          <Property Name="car_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="car_reference" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="car_state" Type="Int32" Nullable="false" />
+          <Property Name="car_valtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="car_amount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_ChargeAccountReference" FromRole="ChargeAccountReference" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="c_id" />
+          </Key>
+          <Property Name="c_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="c_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="c_coursecat_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CourseCategory" Relationship="Self.FK_Course_CourseCategory" FromRole="Course" ToRole="CourseCategory" />
+          <NavigationProperty Name="CourseClasses" Relationship="Self.FK_CourseClass_Course" FromRole="Course" ToRole="CourseClass" />
+          <NavigationProperty Name="Disciplines" Relationship="Self.FK_Discipline_Course" FromRole="Course" ToRole="Discipline" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_Course" FromRole="Course" ToRole="User" />
+        </EntityType>
+        <EntityType Name="CourseCategory">
+          <Key>
+            <PropertyRef Name="cc_id" />
+          </Key>
+          <Property Name="cc_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cc_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Courses" Relationship="Self.FK_Course_CourseCategory" FromRole="CourseCategory" ToRole="Course" />
+        </EntityType>
+        <EntityType Name="CourseClass">
+          <Key>
+            <PropertyRef Name="cc_id" />
+          </Key>
+          <Property Name="cc_id" Type="Int32" Nullable="false" />
+          <Property Name="cc_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="cc_course_id" Type="Int32" Nullable="false" />
+          <Property Name="cc_schedule_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Course" Relationship="Self.FK_CourseClass_Course" FromRole="CourseClass" ToRole="Course" />
+          <NavigationProperty Name="Schedule" Relationship="Self.FK_CourseClass_Schedule" FromRole="CourseClass" ToRole="Schedule" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_User_CourseClass" FromRole="CourseClass" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="d_id" />
+          </Key>
+          <Property Name="d_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="d_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="d_value" Type="Int32" />
+          <Property Name="d_yearcourse" Type="Int32" />
+          <Property Name="d_credits" Type="Int32" />
+          <Property Name="d_user_id" Type="Int32" Nullable="false" />
+          <Property Name="d_course_id" Type="Int32" Nullable="false" />
+          <Property Name="d_scontent_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Course" Relationship="Self.FK_Discipline_Course" FromRole="Discipline" ToRole="Course" />
+          <NavigationProperty Name="ScheduleContent" Relationship="Self.FK_Discipline_ScheduleContent" FromRole="Discipline" ToRole="ScheduleContent" />
+          <NavigationProperty Name="Presences" Relationship="Self.FK_Presence_Discipline" FromRole="Discipline" ToRole="Presence" />
+          <NavigationProperty Name="UserDisciplineLists" Relationship="Self.FK_UserDisciplineList_Discipline" FromRole="Discipline" ToRole="UserDisciplineList" />
+        </EntityType>
+        <EntityType Name="Presence">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="p_discipline_id" Type="Int32" Nullable="false" />
+          <Property Name="p_room_id" Type="Int32" Nullable="false" />
+          <Property Name="p_checkin" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="p_checkout" Type="Time" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Discipline" Relationship="Self.FK_Presence_Discipline" FromRole="Presence" ToRole="Discipline" />
+          <NavigationProperty Name="Room" Relationship="Self.FK_Presence_Room" FromRole="Presence" ToRole="Room" />
+          <NavigationProperty Name="UserPresenceLists" Relationship="Self.FK_UserPresenceList_Presence" FromRole="Presence" ToRole="UserPresenceList" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="pr_id" />
+          </Key>
+          <Property Name="pr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="pr_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="pr_price" Type="Double" Nullable="false" />
+          <NavigationProperty Name="PurchaseProductLists" Relationship="Self.FK_PurchaseProductList_Product" FromRole="Product" ToRole="PurchaseProductList" />
+        </EntityType>
+        <EntityType Name="Purchase">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="p_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="p_total" Type="Double" />
+          <NavigationProperty Name="PurchaseProductLists" Relationship="Self.FK_PurchaseProductList_Purchase" FromRole="Purchase" ToRole="PurchaseProductList" />
+          <NavigationProperty Name="UserPurchaseLists" Relationship="Self.FK_UserPurchaseList_Purchase" FromRole="Purchase" ToRole="UserPurchaseList" />
+        </EntityType>
+        <EntityType Name="PurchaseProductList">
+          <Key>
+            <PropertyRef Name="ppl_id" />
+          </Key>
+          <Property Name="ppl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ppl_purchase_id" Type="Int32" Nullable="false" />
+          <Property Name="ppl_product_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_PurchaseProductList_Product" FromRole="PurchaseProductList" ToRole="Product" />
+          <NavigationProperty Name="Purchase" Relationship="Self.FK_PurchaseProductList_Purchase" FromRole="PurchaseProductList" ToRole="Purchase" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RoleDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="UserRoles" Relationship="Self.FK_UserRoles_Roles" FromRole="Roles" ToRole="UserRoles" />
+        </EntityType>
+        <EntityType Name="Room">
+          <Key>
+            <PropertyRef Name="r_id" />
+          </Key>
+          <Property Name="r_id" Type="Int32" Nullable="false" />
+          <Property Name="r_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="r_arduino_id" Type="Int32" Nullable="false" />
+          <Property Name="r_dscontent_id" Type="Int32" Nullable="false" />
+          <Property Name="r_roomtype_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Arduinoes" Relationship="Self.FK_Arduino_Room" FromRole="Room" ToRole="Arduino" />
+          <NavigationProperty Name="Presences" Relationship="Self.FK_Presence_Room" FromRole="Room" ToRole="Presence" />
+          <NavigationProperty Name="RoomType" Relationship="Self.FK_Room_RoomType" FromRole="Room" ToRole="RoomType" />
+          <NavigationProperty Name="ScheduleContent" Relationship="Self.FK_Room_ScheduleContent" FromRole="Room" ToRole="ScheduleContent" />
+        </EntityType>
+        <EntityType Name="RoomType">
+          <Key>
+            <PropertyRef Name="rt_id" />
+          </Key>
+          <Property Name="rt_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="rt_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_RoomType" FromRole="RoomType" ToRole="Room" />
+        </EntityType>
+        <EntityType Name="Schedule">
+          <Key>
+            <PropertyRef Name="sch_id" />
+          </Key>
+          <Property Name="sch_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sch_designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="CourseClasses" Relationship="Self.FK_CourseClass_Schedule" FromRole="Schedule" ToRole="CourseClass" />
+          <NavigationProperty Name="ScheduleContents" Relationship="Self.FK_ScheduleContent_Schedule" FromRole="Schedule" ToRole="ScheduleContent" />
+        </EntityType>
+        <EntityType Name="ScheduleContent">
+          <Key>
+            <PropertyRef Name="scontent_id" />
+          </Key>
+          <Property Name="scontent_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="scontent_sch_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Disciplines" Relationship="Self.FK_Discipline_ScheduleContent" FromRole="ScheduleContent" ToRole="Discipline" />
+          <NavigationProperty Name="Rooms" Relationship="Self.FK_Room_ScheduleContent" FromRole="ScheduleContent" ToRole="Room" />
+          <NavigationProperty Name="Schedule" Relationship="Self.FK_ScheduleContent_Schedule" FromRole="ScheduleContent" ToRole="Schedule" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="u_id" />
+          </Key>
+          <Property Name="u_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="u_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="u_number" Type="Int32" Nullable="false" />
+          <Property Name="u_course_id" Type="Int32" Nullable="false" />
+          <Property Name="u_courseclass_id" Type="Int32" Nullable="false" />
+          <Property Name="u_bankaccount_id" Type="Int32" Nullable="false" />
+          <Property Name="u_chargeaccref_id" Type="Int32" />
+          <Property Name="u_password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="BankAccount" Relationship="Self.FK_User_BankAccount" FromRole="User" ToRole="BankAccount" />
+          <NavigationProperty Name="ChargeAccountReference" Relationship="Self.FK_User_ChargeAccountReference" FromRole="User" ToRole="ChargeAccountReference" />
+          <NavigationProperty Name="Course" Relationship="Self.FK_User_Course" FromRole="User" ToRole="Course" />
+          <NavigationProperty Name="CourseClass" Relationship="Self.FK_User_CourseClass" FromRole="User" ToRole="CourseClass" />
+          <NavigationProperty Name="UserDisciplineLists" Relationship="Self.FK_UserDisciplineList_User" FromRole="User" ToRole="UserDisciplineList" />
+          <NavigationProperty Name="UserPresenceLists" Relationship="Self.FK_UserPresenceList_User" FromRole="User" ToRole="UserPresenceList" />
+          <NavigationProperty Name="UserPurchaseLists" Relationship="Self.FK_UserPurchaseList_User" FromRole="User" ToRole="UserPurchaseList" />
+          <NavigationProperty Name="UserRoles" Relationship="Self.FK_UserRoles_User" FromRole="User" ToRole="UserRoles" />
+        </EntityType>
+        <EntityType Name="UserDisciplineList">
+          <Key>
+            <PropertyRef Name="udl_id" />
+          </Key>
+          <Property Name="udl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="udl_user_id" Type="Int32" Nullable="false" />
+          <Property Name="udl_discipline_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Discipline" Relationship="Self.FK_UserDisciplineList_Discipline" FromRole="UserDisciplineList" ToRole="Discipline" />
+          <NavigationProperty Name="User" Relationship="Self.FK_UserDisciplineList_User" FromRole="UserDisciplineList" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserPresenceList">
+          <Key>
+            <PropertyRef Name="upl_id" />
+          </Key>
+          <Property Name="upl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="upl_user_id" Type="Int32" Nullable="false" />
+          <Property Name="upl_presence_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Presence" Relationship="Self.FK_UserPresenceList_Presence" FromRole="UserPresenceList" ToRole="Presence" />
+          <NavigationProperty Name="User" Relationship="Self.FK_UserPresenceList_User" FromRole="UserPresenceList" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserPurchaseList">
+          <Key>
+            <PropertyRef Name="upl_id" />
+          </Key>
+          <Property Name="upl_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="upl_purchase_id" Type="Int32" Nullable="false" />
+          <Property Name="upl_user_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Purchase" Relationship="Self.FK_UserPurchaseList_Purchase" FromRole="UserPurchaseList" ToRole="Purchase" />
+          <NavigationProperty Name="User" Relationship="Self.FK_UserPurchaseList_User" FromRole="UserPurchaseList" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="UserRoleId" />
+          </Key>
+          <Property Name="UserRoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="UserRole1" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="Self.FK_UserRoles_Roles" FromRole="UserRoles" ToRole="Roles" />
+          <NavigationProperty Name="User" Relationship="Self.FK_UserRoles_User" FromRole="UserRoles" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_Arduino_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="1" />
+          <End Role="Arduino" Type="Self.Arduino" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="r_id" />
+            </Principal>
+            <Dependent Role="Arduino">
+              <PropertyRef Name="a_room_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_BankAccount">
+          <End Role="BankAccount" Type="Self.BankAccount" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BankAccount">
+              <PropertyRef Name="ba_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_bankaccount_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_ChargeAccountReference">
+          <End Role="ChargeAccountReference" Type="Self.ChargeAccountReference" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ChargeAccountReference">
+              <PropertyRef Name="car_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_chargeaccref_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Course_CourseCategory">
+          <End Role="CourseCategory" Type="Self.CourseCategory" Multiplicity="1" />
+          <End Role="Course" Type="Self.Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CourseCategory">
+              <PropertyRef Name="cc_id" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="c_coursecat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseClass_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="CourseClass">
+              <PropertyRef Name="cc_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="Discipline">
+              <PropertyRef Name="d_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Course">
+          <End Role="Course" Type="Self.Course" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="c_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_course_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseClass_Schedule">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="sch_id" />
+            </Principal>
+            <Dependent Role="CourseClass">
+              <PropertyRef Name="cc_schedule_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_CourseClass">
+          <End Role="CourseClass" Type="Self.CourseClass" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CourseClass">
+              <PropertyRef Name="cc_id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="u_courseclass_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_ScheduleContent">
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="1" />
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScheduleContent">
+              <PropertyRef Name="scontent_id" />
+            </Principal>
+            <Dependent Role="Discipline">
+              <PropertyRef Name="d_scontent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Presence_Discipline">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="Presence" Type="Self.Presence" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="d_id" />
+            </Principal>
+            <Dependent Role="Presence">
+              <PropertyRef Name="p_discipline_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDisciplineList_Discipline">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="UserDisciplineList" Type="Self.UserDisciplineList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="d_id" />
+            </Principal>
+            <Dependent Role="UserDisciplineList">
+              <PropertyRef Name="udl_discipline_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Presence_Room">
+          <End Role="Room" Type="Self.Room" Multiplicity="1" />
+          <End Role="Presence" Type="Self.Presence" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Room">
+              <PropertyRef Name="r_id" />
+            </Principal>
+            <Dependent Role="Presence">
+              <PropertyRef Name="p_room_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPresenceList_Presence">
+          <End Role="Presence" Type="Self.Presence" Multiplicity="1" />
+          <End Role="UserPresenceList" Type="Self.UserPresenceList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Presence">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="UserPresenceList">
+              <PropertyRef Name="upl_presence_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseProductList_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="PurchaseProductList" Type="Self.PurchaseProductList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="pr_id" />
+            </Principal>
+            <Dependent Role="PurchaseProductList">
+              <PropertyRef Name="ppl_product_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PurchaseProductList_Purchase">
+          <End Role="Purchase" Type="Self.Purchase" Multiplicity="1" />
+          <End Role="PurchaseProductList" Type="Self.PurchaseProductList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchase">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="PurchaseProductList">
+              <PropertyRef Name="ppl_purchase_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPurchaseList_Purchase">
+          <End Role="Purchase" Type="Self.Purchase" Multiplicity="1" />
+          <End Role="UserPurchaseList" Type="Self.UserPurchaseList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Purchase">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="UserPurchaseList">
+              <PropertyRef Name="upl_purchase_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserRoles_Roles">
+          <End Role="Roles" Type="Self.Role" Multiplicity="1" />
+          <End Role="UserRoles" Type="Self.UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserRoles">
+              <PropertyRef Name="UserRole1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_RoomType">
+          <End Role="RoomType" Type="Self.RoomType" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RoomType">
+              <PropertyRef Name="rt_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="r_roomtype_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Room_ScheduleContent">
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="1" />
+          <End Role="Room" Type="Self.Room" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ScheduleContent">
+              <PropertyRef Name="scontent_id" />
+            </Principal>
+            <Dependent Role="Room">
+              <PropertyRef Name="r_dscontent_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ScheduleContent_Schedule">
+          <End Role="Schedule" Type="Self.Schedule" Multiplicity="1" />
+          <End Role="ScheduleContent" Type="Self.ScheduleContent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Schedule">
+              <PropertyRef Name="sch_id" />
+            </Principal>
+            <Dependent Role="ScheduleContent">
+              <PropertyRef Name="scontent_sch_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDisciplineList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserDisciplineList" Type="Self.UserDisciplineList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserDisciplineList">
+              <PropertyRef Name="udl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPresenceList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserPresenceList" Type="Self.UserPresenceList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserPresenceList">
+              <PropertyRef Name="upl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPurchaseList_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserPurchaseList" Type="Self.UserPurchaseList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserPurchaseList">
+              <PropertyRef Name="upl_user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserRoles_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserRoles" Type="Self.UserRole" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="u_id" />
+            </Principal>
+            <Dependent Role="UserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ESTGestDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Arduinoes" EntityType="Self.Arduino" />
+          <EntitySet Name="BankAccounts" EntityType="Self.BankAccount" />
+          <EntitySet Name="ChargeAccountReferences" EntityType="Self.ChargeAccountReference" />
+          <EntitySet Name="Courses" EntityType="Self.Course" />
+          <EntitySet Name="CourseCategories" EntityType="Self.CourseCategory" />
+          <EntitySet Name="CourseClasses" EntityType="Self.CourseClass" />
+          <EntitySet Name="Disciplines" EntityType="Self.Discipline" />
+          <EntitySet Name="Presences" EntityType="Self.Presence" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="Purchases" EntityType="Self.Purchase" />
+          <EntitySet Name="PurchaseProductLists" EntityType="Self.PurchaseProductList" />
+          <EntitySet Name="Roles" EntityType="Self.Role" />
+          <EntitySet Name="Rooms" EntityType="Self.Room" />
+          <EntitySet Name="RoomTypes" EntityType="Self.RoomType" />
+          <EntitySet Name="Schedules" EntityType="Self.Schedule" />
+          <EntitySet Name="ScheduleContents" EntityType="Self.ScheduleContent" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="UserDisciplineLists" EntityType="Self.UserDisciplineList" />
+          <EntitySet Name="UserPresenceLists" EntityType="Self.UserPresenceList" />
+          <EntitySet Name="UserPurchaseLists" EntityType="Self.UserPurchaseList" />
+          <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+          <AssociationSet Name="FK_Arduino_Room" Association="Self.FK_Arduino_Room">
+            <End Role="Room" EntitySet="Rooms" />
+            <End Role="Arduino" EntitySet="Arduinoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_BankAccount" Association="Self.FK_User_BankAccount">
+            <End Role="BankAccount" EntitySet="BankAccounts" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_ChargeAccountReference" Association="Self.FK_User_ChargeAccountReference">
+            <End Role="ChargeAccountReference" EntitySet="ChargeAccountReferences" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Course_CourseCategory" Association="Self.FK_Course_CourseCategory">
+            <End Role="CourseCategory" EntitySet="CourseCategories" />
+            <End Role="Course" EntitySet="Courses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseClass_Course" Association="Self.FK_CourseClass_Course">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="CourseClass" EntitySet="CourseClasses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_Course" Association="Self.FK_Discipline_Course">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="Discipline" EntitySet="Disciplines" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Course" Association="Self.FK_User_Course">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseClass_Schedule" Association="Self.FK_CourseClass_Schedule">
+            <End Role="Schedule" EntitySet="Schedules" />
+            <End Role="CourseClass" EntitySet="CourseClasses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_CourseClass" Association="Self.FK_User_CourseClass">
+            <End Role="CourseClass" EntitySet="CourseClasses" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_ScheduleContent" Association="Self.FK_Discipline_ScheduleContent">
+            <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+            <End Role="Discipline" EntitySet="Disciplines" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Presence_Discipline" Association="Self.FK_Presence_Discipline">
+            <End Role="Discipline" EntitySet="Disciplines" />
+            <End Role="Presence" EntitySet="Presences" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDisciplineList_Discipline" Association="Self.FK_UserDisciplineList_Discipline">
+            <End Role="Discipline" EntitySet="Disciplines" />
+            <End Role="UserDisciplineList" EntitySet="UserDisciplineLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Presence_Room" Association="Self.FK_Presence_Room">
+            <End Role="Room" EntitySet="Rooms" />
+            <End Role="Presence" EntitySet="Presences" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPresenceList_Presence" Association="Self.FK_UserPresenceList_Presence">
+            <End Role="Presence" EntitySet="Presences" />
+            <End Role="UserPresenceList" EntitySet="UserPresenceLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseProductList_Product" Association="Self.FK_PurchaseProductList_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="PurchaseProductList" EntitySet="PurchaseProductLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PurchaseProductList_Purchase" Association="Self.FK_PurchaseProductList_Purchase">
+            <End Role="Purchase" EntitySet="Purchases" />
+            <End Role="PurchaseProductList" EntitySet="PurchaseProductLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPurchaseList_Purchase" Association="Self.FK_UserPurchaseList_Purchase">
+            <End Role="Purchase" EntitySet="Purchases" />
+            <End Role="UserPurchaseList" EntitySet="UserPurchaseLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_Roles" Association="Self.FK_UserRoles_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UserRoles" EntitySet="UserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_RoomType" Association="Self.FK_Room_RoomType">
+            <End Role="RoomType" EntitySet="RoomTypes" />
+            <End Role="Room" EntitySet="Rooms" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Room_ScheduleContent" Association="Self.FK_Room_ScheduleContent">
+            <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+            <End Role="Room" EntitySet="Rooms" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ScheduleContent_Schedule" Association="Self.FK_ScheduleContent_Schedule">
+            <End Role="Schedule" EntitySet="Schedules" />
+            <End Role="ScheduleContent" EntitySet="ScheduleContents" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDisciplineList_User" Association="Self.FK_UserDisciplineList_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserDisciplineList" EntitySet="UserDisciplineLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPresenceList_User" Association="Self.FK_UserPresenceList_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPresenceList" EntitySet="UserPresenceLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPurchaseList_User" Association="Self.FK_UserPurchaseList_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPurchaseList" EntitySet="UserPurchaseLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_User" Association="Self.FK_UserRoles_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserRoles" EntitySet="UserRoles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ESTGestDBModelStoreContainer" CdmEntityContainer="ESTGestDBEntities">
+          <EntitySetMapping Name="Arduinoes">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Arduino">
+              <MappingFragment StoreEntitySet="Arduino">
+                <ScalarProperty Name="a_id" ColumnName="a_id" />
+                <ScalarProperty Name="a_value" ColumnName="a_value" />
+                <ScalarProperty Name="a_room_id" ColumnName="a_room_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BankAccounts">
+            <EntityTypeMapping TypeName="ESTGestDBModel.BankAccount">
+              <MappingFragment StoreEntitySet="BankAccount">
+                <ScalarProperty Name="ba_id" ColumnName="ba_id" />
+                <ScalarProperty Name="ba_number" ColumnName="ba_number" />
+                <ScalarProperty Name="bar_cash" ColumnName="bar_cash" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChargeAccountReferences">
+            <EntityTypeMapping TypeName="ESTGestDBModel.ChargeAccountReference">
+              <MappingFragment StoreEntitySet="ChargeAccountReference">
+                <ScalarProperty Name="car_id" ColumnName="car_id" />
+                <ScalarProperty Name="car_reference" ColumnName="car_reference" />
+                <ScalarProperty Name="car_state" ColumnName="car_state" />
+                <ScalarProperty Name="car_valtime" ColumnName="car_valtime" />
+                <ScalarProperty Name="car_amount" ColumnName="car_amount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Course">
+              <MappingFragment StoreEntitySet="Course">
+                <ScalarProperty Name="c_id" ColumnName="c_id" />
+                <ScalarProperty Name="c_designation" ColumnName="c_designation" />
+                <ScalarProperty Name="c_coursecat_id" ColumnName="c_coursecat_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CourseCategories">
+            <EntityTypeMapping TypeName="ESTGestDBModel.CourseCategory">
+              <MappingFragment StoreEntitySet="CourseCategory">
+                <ScalarProperty Name="cc_id" ColumnName="cc_id" />
+                <ScalarProperty Name="cc_designation" ColumnName="cc_designation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CourseClasses">
+            <EntityTypeMapping TypeName="ESTGestDBModel.CourseClass">
+              <MappingFragment StoreEntitySet="CourseClass">
+                <ScalarProperty Name="cc_id" ColumnName="cc_id" />
+                <ScalarProperty Name="cc_designation" ColumnName="cc_designation" />
+                <ScalarProperty Name="cc_course_id" ColumnName="cc_course_id" />
+                <ScalarProperty Name="cc_schedule_id" ColumnName="cc_schedule_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Disciplines">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Discipline">
+              <MappingFragment StoreEntitySet="Discipline">
+                <ScalarProperty Name="d_id" ColumnName="d_id" />
+                <ScalarProperty Name="d_designation" ColumnName="d_designation" />
+                <ScalarProperty Name="d_value" ColumnName="d_value" />
+                <ScalarProperty Name="d_yearcourse" ColumnName="d_yearcourse" />
+                <ScalarProperty Name="d_credits" ColumnName="d_credits" />
+                <ScalarProperty Name="d_user_id" ColumnName="d_user_id" />
+                <ScalarProperty Name="d_course_id" ColumnName="d_course_id" />
+                <ScalarProperty Name="d_scontent_id" ColumnName="d_scontent_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Presences">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Presence">
+              <MappingFragment StoreEntitySet="Presence">
+                <ScalarProperty Name="p_id" ColumnName="p_id" />
+                <ScalarProperty Name="p_discipline_id" ColumnName="p_discipline_id" />
+                <ScalarProperty Name="p_room_id" ColumnName="p_room_id" />
+                <ScalarProperty Name="p_checkin" ColumnName="p_checkin" />
+                <ScalarProperty Name="p_checkout" ColumnName="p_checkout" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="pr_id" ColumnName="pr_id" />
+                <ScalarProperty Name="pr_designation" ColumnName="pr_designation" />
+                <ScalarProperty Name="pr_price" ColumnName="pr_price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Purchases">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Purchase">
+              <MappingFragment StoreEntitySet="Purchase">
+                <ScalarProperty Name="p_id" ColumnName="p_id" />
+                <ScalarProperty Name="p_designation" ColumnName="p_designation" />
+                <ScalarProperty Name="p_total" ColumnName="p_total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PurchaseProductLists">
+            <EntityTypeMapping TypeName="ESTGestDBModel.PurchaseProductList">
+              <MappingFragment StoreEntitySet="PurchaseProductList">
+                <ScalarProperty Name="ppl_id" ColumnName="ppl_id" />
+                <ScalarProperty Name="ppl_purchase_id" ColumnName="ppl_purchase_id" />
+                <ScalarProperty Name="ppl_product_id" ColumnName="ppl_product_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Role">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rooms">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Room">
+              <MappingFragment StoreEntitySet="Room">
+                <ScalarProperty Name="r_id" ColumnName="r_id" />
+                <ScalarProperty Name="r_designation" ColumnName="r_designation" />
+                <ScalarProperty Name="r_arduino_id" ColumnName="r_arduino_id" />
+                <ScalarProperty Name="r_dscontent_id" ColumnName="r_dscontent_id" />
+                <ScalarProperty Name="r_roomtype_id" ColumnName="r_roomtype_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RoomTypes">
+            <EntityTypeMapping TypeName="ESTGestDBModel.RoomType">
+              <MappingFragment StoreEntitySet="RoomType">
+                <ScalarProperty Name="rt_id" ColumnName="rt_id" />
+                <ScalarProperty Name="rt_designation" ColumnName="rt_designation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Schedules">
+            <EntityTypeMapping TypeName="ESTGestDBModel.Schedule">
+              <MappingFragment StoreEntitySet="Schedule">
+                <ScalarProperty Name="sch_id" ColumnName="sch_id" />
+                <ScalarProperty Name="sch_designation" ColumnName="sch_designation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ScheduleContents">
+            <EntityTypeMapping TypeName="ESTGestDBModel.ScheduleContent">
+              <MappingFragment StoreEntitySet="ScheduleContent">
+                <ScalarProperty Name="scontent_id" ColumnName="scontent_id" />
+                <ScalarProperty Name="scontent_sch_id" ColumnName="scontent_sch_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ESTGestDBModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="u_id" ColumnName="u_id" />
+                <ScalarProperty Name="u_name" ColumnName="u_name" />
+                <ScalarProperty Name="u_number" ColumnName="u_number" />
+                <ScalarProperty Name="u_course_id" ColumnName="u_course_id" />
+                <ScalarProperty Name="u_courseclass_id" ColumnName="u_courseclass_id" />
+                <ScalarProperty Name="u_bankaccount_id" ColumnName="u_bankaccount_id" />
+                <ScalarProperty Name="u_chargeaccref_id" ColumnName="u_chargeaccref_id" />
+                <ScalarProperty Name="u_password" ColumnName="u_password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserDisciplineLists">
+            <EntityTypeMapping TypeName="ESTGestDBModel.UserDisciplineList">
+              <MappingFragment StoreEntitySet="UserDisciplineList">
+                <ScalarProperty Name="udl_id" ColumnName="udl_id" />
+                <ScalarProperty Name="udl_user_id" ColumnName="udl_user_id" />
+                <ScalarProperty Name="udl_discipline_id" ColumnName="udl_discipline_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPresenceLists">
+            <EntityTypeMapping TypeName="ESTGestDBModel.UserPresenceList">
+              <MappingFragment StoreEntitySet="UserPresenceList">
+                <ScalarProperty Name="upl_id" ColumnName="upl_id" />
+                <ScalarProperty Name="upl_user_id" ColumnName="upl_user_id" />
+                <ScalarProperty Name="upl_presence_id" ColumnName="upl_presence_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPurchaseLists">
+            <EntityTypeMapping TypeName="ESTGestDBModel.UserPurchaseList">
+              <MappingFragment StoreEntitySet="UserPurchaseList">
+                <ScalarProperty Name="upl_id" ColumnName="upl_id" />
+                <ScalarProperty Name="upl_purchase_id" ColumnName="upl_purchase_id" />
+                <ScalarProperty Name="upl_user_id" ColumnName="upl_user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRoles">
+            <EntityTypeMapping TypeName="ESTGestDBModel.UserRole">
+              <MappingFragment StoreEntitySet="UserRoles">
+                <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserRole1" ColumnName="UserRole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

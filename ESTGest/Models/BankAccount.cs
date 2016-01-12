@@ -11,21 +11,20 @@ namespace ESTGest.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class BankAccount
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BankAccount()
         {
             this.Users = new HashSet<User>();
         }
     
         public int ba_id { get; set; }
-        [DisplayName("Número")]
         public string ba_number { get; set; }
-        [DisplayName("Montante")]
         public Nullable<double> bar_cash { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }
     }
 }

@@ -11,10 +11,10 @@ namespace ESTGest.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class Purchase
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Purchase()
         {
             this.PurchaseProductLists = new HashSet<PurchaseProductList>();
@@ -22,12 +22,12 @@ namespace ESTGest.Models
         }
     
         public int p_id { get; set; }
-        [DisplayName("Nome da Compra (ID)")]
         public string p_designation { get; set; }
-        [DisplayName("Total")]
         public Nullable<double> p_total { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PurchaseProductList> PurchaseProductLists { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserPurchaseList> UserPurchaseLists { get; set; }
     }
 }

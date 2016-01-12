@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class Room
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Room()
         {
             this.Arduinoes = new HashSet<Arduino>();
@@ -26,7 +27,9 @@ namespace ESTGest.Models
         public int r_dscontent_id { get; set; }
         public int r_roomtype_id { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Arduino> Arduinoes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Presence> Presences { get; set; }
         public virtual RoomType RoomType { get; set; }
         public virtual ScheduleContent ScheduleContent { get; set; }

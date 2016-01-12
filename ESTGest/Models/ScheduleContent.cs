@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class ScheduleContent
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ScheduleContent()
         {
             this.Disciplines = new HashSet<Discipline>();
@@ -23,7 +24,9 @@ namespace ESTGest.Models
         public int scontent_id { get; set; }
         public int scontent_sch_id { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Discipline> Disciplines { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Room> Rooms { get; set; }
         public virtual Schedule Schedule { get; set; }
     }

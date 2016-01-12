@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class Presence
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Presence()
         {
             this.UserPresenceLists = new HashSet<UserPresenceList>();
@@ -27,6 +28,7 @@ namespace ESTGest.Models
     
         public virtual Discipline Discipline { get; set; }
         public virtual Room Room { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserPresenceList> UserPresenceLists { get; set; }
     }
 }

@@ -11,25 +11,22 @@ namespace ESTGest.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class ChargeAccountReference
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ChargeAccountReference()
         {
             this.Users = new HashSet<User>();
         }
     
         public int car_id { get; set; }
-        [DisplayName("Referência")]
         public string car_reference { get; set; }
-        [DisplayName("Estado")]
         public int car_state { get; set; }
-        [DisplayName("Validade")]
         public System.DateTime car_valtime { get; set; }
-        [DisplayName("Montante")]
         public int car_amount { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }
     }
 }

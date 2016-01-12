@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class RoomType
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public RoomType()
         {
             this.Rooms = new HashSet<Room>();
@@ -22,6 +23,7 @@ namespace ESTGest.Models
         public int rt_id { get; set; }
         public string rt_designation { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Room> Rooms { get; set; }
     }
 }

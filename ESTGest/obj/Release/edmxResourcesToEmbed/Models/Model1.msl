@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ESTGestDBModelStoreContainer" CdmEntityContainer="ESTGestDBEntities">
+    <EntitySetMapping Name="Arduinoes">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Arduino">
+        <MappingFragment StoreEntitySet="Arduino">
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="a_value" ColumnName="a_value" />
+          <ScalarProperty Name="a_room_id" ColumnName="a_room_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankAccounts">
+      <EntityTypeMapping TypeName="ESTGestDBModel.BankAccount">
+        <MappingFragment StoreEntitySet="BankAccount">
+          <ScalarProperty Name="ba_id" ColumnName="ba_id" />
+          <ScalarProperty Name="ba_number" ColumnName="ba_number" />
+          <ScalarProperty Name="bar_cash" ColumnName="bar_cash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChargeAccountReferences">
+      <EntityTypeMapping TypeName="ESTGestDBModel.ChargeAccountReference">
+        <MappingFragment StoreEntitySet="ChargeAccountReference">
+          <ScalarProperty Name="car_id" ColumnName="car_id" />
+          <ScalarProperty Name="car_reference" ColumnName="car_reference" />
+          <ScalarProperty Name="car_state" ColumnName="car_state" />
+          <ScalarProperty Name="car_valtime" ColumnName="car_valtime" />
+          <ScalarProperty Name="car_amount" ColumnName="car_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="c_id" ColumnName="c_id" />
+          <ScalarProperty Name="c_designation" ColumnName="c_designation" />
+          <ScalarProperty Name="c_coursecat_id" ColumnName="c_coursecat_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseCategories">
+      <EntityTypeMapping TypeName="ESTGestDBModel.CourseCategory">
+        <MappingFragment StoreEntitySet="CourseCategory">
+          <ScalarProperty Name="cc_id" ColumnName="cc_id" />
+          <ScalarProperty Name="cc_designation" ColumnName="cc_designation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CourseClasses">
+      <EntityTypeMapping TypeName="ESTGestDBModel.CourseClass">
+        <MappingFragment StoreEntitySet="CourseClass">
+          <ScalarProperty Name="cc_id" ColumnName="cc_id" />
+          <ScalarProperty Name="cc_designation" ColumnName="cc_designation" />
+          <ScalarProperty Name="cc_course_id" ColumnName="cc_course_id" />
+          <ScalarProperty Name="cc_schedule_id" ColumnName="cc_schedule_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disciplines">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Discipline">
+        <MappingFragment StoreEntitySet="Discipline">
+          <ScalarProperty Name="d_id" ColumnName="d_id" />
+          <ScalarProperty Name="d_designation" ColumnName="d_designation" />
+          <ScalarProperty Name="d_value" ColumnName="d_value" />
+          <ScalarProperty Name="d_yearcourse" ColumnName="d_yearcourse" />
+          <ScalarProperty Name="d_credits" ColumnName="d_credits" />
+          <ScalarProperty Name="d_user_id" ColumnName="d_user_id" />
+          <ScalarProperty Name="d_course_id" ColumnName="d_course_id" />
+          <ScalarProperty Name="d_scontent_id" ColumnName="d_scontent_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presences">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Presence">
+        <MappingFragment StoreEntitySet="Presence">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_discipline_id" ColumnName="p_discipline_id" />
+          <ScalarProperty Name="p_room_id" ColumnName="p_room_id" />
+          <ScalarProperty Name="p_checkin" ColumnName="p_checkin" />
+          <ScalarProperty Name="p_checkout" ColumnName="p_checkout" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="pr_id" ColumnName="pr_id" />
+          <ScalarProperty Name="pr_designation" ColumnName="pr_designation" />
+          <ScalarProperty Name="pr_price" ColumnName="pr_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Purchases">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Purchase">
+        <MappingFragment StoreEntitySet="Purchase">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_designation" ColumnName="p_designation" />
+          <ScalarProperty Name="p_total" ColumnName="p_total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseProductLists">
+      <EntityTypeMapping TypeName="ESTGestDBModel.PurchaseProductList">
+        <MappingFragment StoreEntitySet="PurchaseProductList">
+          <ScalarProperty Name="ppl_id" ColumnName="ppl_id" />
+          <ScalarProperty Name="ppl_purchase_id" ColumnName="ppl_purchase_id" />
+          <ScalarProperty Name="ppl_product_id" ColumnName="ppl_product_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleDescription" ColumnName="RoleDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="r_id" ColumnName="r_id" />
+          <ScalarProperty Name="r_designation" ColumnName="r_designation" />
+          <ScalarProperty Name="r_arduino_id" ColumnName="r_arduino_id" />
+          <ScalarProperty Name="r_dscontent_id" ColumnName="r_dscontent_id" />
+          <ScalarProperty Name="r_roomtype_id" ColumnName="r_roomtype_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoomTypes">
+      <EntityTypeMapping TypeName="ESTGestDBModel.RoomType">
+        <MappingFragment StoreEntitySet="RoomType">
+          <ScalarProperty Name="rt_id" ColumnName="rt_id" />
+          <ScalarProperty Name="rt_designation" ColumnName="rt_designation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="ESTGestDBModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="sch_id" ColumnName="sch_id" />
+          <ScalarProperty Name="sch_designation" ColumnName="sch_designation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleContents">
+      <EntityTypeMapping TypeName="ESTGestDBModel.ScheduleContent">
+        <MappingFragment StoreEntitySet="ScheduleContent">
+          <ScalarProperty Name="scontent_id" ColumnName="scontent_id" />
+          <ScalarProperty Name="scontent_sch_id" ColumnName="scontent_sch_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ESTGestDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="u_id" ColumnName="u_id" />
+          <ScalarProperty Name="u_name" ColumnName="u_name" />
+          <ScalarProperty Name="u_number" ColumnName="u_number" />
+          <ScalarProperty Name="u_course_id" ColumnName="u_course_id" />
+          <ScalarProperty Name="u_courseclass_id" ColumnName="u_courseclass_id" />
+          <ScalarProperty Name="u_bankaccount_id" ColumnName="u_bankaccount_id" />
+          <ScalarProperty Name="u_chargeaccref_id" ColumnName="u_chargeaccref_id" />
+          <ScalarProperty Name="u_password" ColumnName="u_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDisciplineLists">
+      <EntityTypeMapping TypeName="ESTGestDBModel.UserDisciplineList">
+        <MappingFragment StoreEntitySet="UserDisciplineList">
+          <ScalarProperty Name="udl_id" ColumnName="udl_id" />
+          <ScalarProperty Name="udl_user_id" ColumnName="udl_user_id" />
+          <ScalarProperty Name="udl_discipline_id" ColumnName="udl_discipline_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPresenceLists">
+      <EntityTypeMapping TypeName="ESTGestDBModel.UserPresenceList">
+        <MappingFragment StoreEntitySet="UserPresenceList">
+          <ScalarProperty Name="upl_id" ColumnName="upl_id" />
+          <ScalarProperty Name="upl_user_id" ColumnName="upl_user_id" />
+          <ScalarProperty Name="upl_presence_id" ColumnName="upl_presence_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPurchaseLists">
+      <EntityTypeMapping TypeName="ESTGestDBModel.UserPurchaseList">
+        <MappingFragment StoreEntitySet="UserPurchaseList">
+          <ScalarProperty Name="upl_id" ColumnName="upl_id" />
+          <ScalarProperty Name="upl_purchase_id" ColumnName="upl_purchase_id" />
+          <ScalarProperty Name="upl_user_id" ColumnName="upl_user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRoles">
+      <EntityTypeMapping TypeName="ESTGestDBModel.UserRole">
+        <MappingFragment StoreEntitySet="UserRoles">
+          <ScalarProperty Name="UserRoleId" ColumnName="UserRoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserRole1" ColumnName="UserRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

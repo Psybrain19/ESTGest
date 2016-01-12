@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8ee451b6232412faf922613a9ce2146" Name="Diagram1">
+        <EntityTypeShape EntityType="ESTGestDBModel.Arduino" Width="1.5" PointX="10.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.BankAccount" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.ChargeAccountReference" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Course" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.CourseCategory" Width="1.5" PointX="1.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.CourseClass" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Discipline" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Presence" Width="1.5" PointX="10.5" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Product" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Purchase" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.PurchaseProductList" Width="1.5" PointX="10.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Role" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Room" Width="1.5" PointX="8.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.RoomType" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.Schedule" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.ScheduleContent" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.User" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.UserDisciplineList" Width="1.5" PointX="7.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.UserPresenceList" Width="1.5" PointX="12.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.UserPurchaseList" Width="1.5" PointX="7.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ESTGestDBModel.UserRole" Width="1.5" PointX="10.5" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Arduino_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_User_BankAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_User_ChargeAccountReference" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Course_CourseCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_CourseClass_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Discipline_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_User_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_CourseClass_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_User_CourseClass" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Discipline_ScheduleContent" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Presence_Discipline" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserDisciplineList_Discipline" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Presence_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserPresenceList_Presence" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_PurchaseProductList_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_PurchaseProductList_Purchase" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserPurchaseList_Purchase" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserRoles_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Room_RoomType" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_Room_ScheduleContent" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_ScheduleContent_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserDisciplineList_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserPresenceList_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserPurchaseList_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ESTGestDBModel.FK_UserRoles_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

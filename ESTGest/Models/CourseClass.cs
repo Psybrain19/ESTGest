@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class CourseClass
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CourseClass()
         {
             this.Users = new HashSet<User>();
@@ -26,6 +27,7 @@ namespace ESTGest.Models
     
         public virtual Course Course { get; set; }
         public virtual Schedule Schedule { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> Users { get; set; }
     }
 }

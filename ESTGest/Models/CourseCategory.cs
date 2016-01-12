@@ -14,6 +14,7 @@ namespace ESTGest.Models
     
     public partial class CourseCategory
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CourseCategory()
         {
             this.Courses = new HashSet<Course>();
@@ -22,6 +23,7 @@ namespace ESTGest.Models
         public int cc_id { get; set; }
         public string cc_designation { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Course> Courses { get; set; }
     }
 }
